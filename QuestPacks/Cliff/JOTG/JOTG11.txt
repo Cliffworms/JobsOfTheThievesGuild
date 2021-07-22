@@ -1,0 +1,1006 @@
+Quest: JOTG11
+DisplayName: Botched Burglary
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            %lev, can ye spare an hour or two? Yesterday
+<ce>            I sent someone to rob a house in town and he hasn’t
+<ce>            come back. I hope nothing bad happened.
+<--->
+<ce>            %pcf, one of our thieves hasn’t returned from
+<ce>            a burglary and I fear something bad may have happened.
+<ce>            Can ye go check?
+<--->
+<ce>            %oth! Am I surrounded by idiots in this guild!?
+<ce>            %pcf, we have a dumb-headed of a thief who hasn’t returned
+<ce>            from a robbery. An important rule of burglary is to always
+<ce>            report once the job’s done. Can ye go check it out?
+
+RefuseQuest:  [1001]
+<ce>            Seriously %pcf? If you don’t return from a job
+<ce>            I gave ya, I won’t send help yer way.
+<--->
+<ce>            That’s a shame, %lev. A damn shame.
+<ce>            Get out of here.
+
+AcceptQuest:  [1002]
+<ce>            So. _dummy_ went to break into _location_.
+<ce>            If %g messed up, I want you to clean up the place so it
+<ce>            can’t be traced back to us. If %g’s not there, I want
+<ce>            you to to find %g2. All clear? You’d better make it quick
+<ce>            before the guards send someone of their own to investigate.
+<ce>            Get that done today, okay?
+<--->
+<ce>            The fool’s name is _dummy_ and I ordered %g2 to rob
+<ce>            _location_ blind. Either things didn’t go %g3 way or %g
+<ce>            messed up and ran away. Or maybe something worse. If there’s
+<ce>            a mess, clean it up. If _dummy_ isn’t there, find %g2. All
+<ce>            clear? Get that done today. I don't want the guards to
+<ce>            investigate the place.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>            Here's yer reward for a job well done.
+
+RumorsDuringQuest:   [1005]
+I hear there’s been more break-ins in town lately. Get yourself a weapon and lock your doors at night.
+
+RumorsPostFailure:   [1006]
+There’s been lots of guards at _location_. Some burglary gone bad, from what I hear.
+<--->
+Some ruffians killed poor %mn2 inside his own house. This is horrible, I tell you.
+<--->
+Some ruffians killed poor %fn2 inside her own house. This is horrible, I tell you.
+
+RumorsPostSuccess:   [1007]
+%nam’s been missing for the last few days. Some fear the worst.
+<--->
+%fn2’s husband is worried. He arrived at his home only to find no traces of his wife. No goodbye letter. Nothing.
+<--->
+%mn2’s wife is worried. She arrived at her home only find no traces of her husband. No goodbye letter. Nothing.
+
+QuestorPostsuccess:  [1008]
+Hey there. Still no word from the city guards about that robbery gone bad at _location_. What can I do ye for?
+
+QuestorPostfailure:  [1009]
+You know, I still need to bribe some officials from time to time about that horrible job you did at _location_. So make it quick. I ain’t happy about you.
+
+Message: 1010
+%qdt
+I've been ordered by _questgiver_ of the
+Thieves Guild in ___questgiver_ to find
+the whereabouts of _dummy_,
+a fellow thief that was sent to rob
+_location_. If something bad
+happened, I am to clean the place so that
+the city guards do not link the burglary
+to the Thieves Guild. I need to do this
+today.
+
+Message: 1011
+%qdt
+_dummy_ escaped _location_ after
+killing the owner. I need to bring the owner's
+corpse to ___cemetary_ where a contact
+of the Thieves Guild will dispose of it. In the
+meantime, the guildmaster will have his spymaster
+find the location of _dummy_.
+
+Message: 1012
+%qdt
+_dummy_'s hiding in _res_.
+The guildmaster prefers to have %g2 alive.
+
+Message: 1020
+<ce>            As you close the door behind you, someone arrives
+<ce>            from a nearby room, nervous.
+<ce>
+<ce>            “You from the Guild too? I live nearby and heard
+<ce>            the commotion. The thief who broke into the place
+<ce>            got in a fight with the owner. There’s a corpse
+<ce>            in one of the rooms. What a damn mess. I’ll keep
+<ce>            a lookout for the guards while you investigate,
+<ce>            okay?”
+<ce>
+<ce>            The thief returns to another room, keeping watch.
+<--->
+<ce>            Someone stands before you in the hall.
+<ce>
+<ce>            “What a mess. What a damn mess! Ye must be the
+<ce>            one from the Guild to clean that I guess? Our
+<ce>            guildmate who broke in here killed the owner
+<ce>            before fleeing the place. Tell you what, you do
+<ce>            your things and I warn ye if I see any guards
+<ce>            coming our way.”
+<ce>
+<ce>            The thief returns to another room, keeping watch.
+
+Message: 1030
+<ce>            Judging by the corpse’s attire, it is obvious it
+<ce>            is the owner of this home. A tiny pool of blood
+<ce>            near his head shows that he has been bludgeoned
+<ce>            and died from blood loss while being unconscious.
+<ce>            Bloody footprints lead to an opened window. 
+<ce>
+<ce>            "Yeah, that's the owner alright. Name's
+<ce>            _thief_, by the way. Let me help you."
+<ce>            says your guildmate as %g enters the room.
+<ce>
+<ce>            You wipe off the blood on the floor and pick up
+<ce>            the owner’s body. The guildmaster may know what to
+<ce>            do with it.
+<ce>
+<ce>            "Let's rush straight to the Guild. We don't want
+<ce>            unwanted attention."
+<--->
+<ce>            Judging by the corpse’s attire, it is obvious it
+<ce>            is the owner of this home. A tiny pool of blood
+<ce>            near her head shows that she has been bludgeoned
+<ce>            and died from blood loss while being unconscious.
+<ce>            Bloody footprints lead to an opened window. 
+<ce>
+<ce>            "Yeah, that's the owner alright. Name's
+<ce>            _thief_, by the way. Let me help you."
+<ce>            says your guildmate as %g enters the room.
+<ce>
+<ce>            You wipe off the blood on the floor and pick up
+<ce>            the owner’s body. The guildmaster may know what to
+<ce>            do with it.
+<ce>
+<ce>            "Let's rush straight to the Guild. We don't want
+<ce>            unwanted attention."
+<--->
+<ce>            Before you stands the lifeless body of
+<ce>            _location_’s owner. Judging by the wounds,
+<ce>            it appears he broke his neck against the wall or a
+<ce>            nearby piece of furniture after an altercation, most
+<ce>            likely with _dummy_. Wet footprints lead to
+<ce>            an opened window.
+<ce>
+<ce>            "Yeah, that's the owner alright. Name's
+<ce>            _thief_, by the way. Let me help you."
+<ce>            says your guildmate as %g enters the room.
+<ce>
+<ce>            The guildmaster may know how to dispose of the
+<ce>            corpse.
+<ce>
+<ce>            "Let's rush straight to the Guild. We don't want
+<ce>            unwanted attention."
+<--->
+<ce>            Before you stands the lifeless body of
+<ce>            _location_’s owner. Judging by the wounds,
+<ce>            it appears she broke her neck against the wall or a
+<ce>            nearby piece of furniture after an altercation, most
+<ce>            likely with _dummy_. Wet footprints lead to
+<ce>            an opened window.
+<ce>
+<ce>            "Yeah, that's the owner alright. Name's
+<ce>            _thief_, by the way. Let me help you."
+<ce>            says your guildmate as %g enters the room.
+<ce>
+<ce>            The guildmaster may know how to dispose of the
+<ce>            corpse.
+<ce>
+<ce>            "Let's rush straight to the Guild. We don't want
+<ce>            unwanted attention."
+
+Message: 1035
+<ce>            Judging by the corpse’s attire, it is obvious it
+<ce>            is the owner of this home. A tiny pool of blood
+<ce>            near his head shows that he has been bludgeoned
+<ce>            and died from blood loss while being unconscious.
+<ce>            Bloody footprints lead to an opened window. 
+<ce>
+<ce>            "Come on, quick! Let's pick him up and get out!
+<ce>            Name's _thief_, by the way."
+<ce>            says your guildmate as %g runs in the room.
+<ce>
+<ce>            The guildmaster may know what to do with the body.
+<--->
+<ce>            Judging by the corpse’s attire, it is obvious it
+<ce>            is the owner of this home. A tiny pool of blood
+<ce>            near her head shows that she has been bludgeoned
+<ce>            and died from blood loss while being unconscious.
+<ce>            Bloody footprints lead to an opened window. 
+<ce>
+<ce>            "Come on, quick! Let's pick him up and get out!
+<ce>            Name's _thief_, by the way."
+<ce>            says your guildmate as %g runs in the room.
+<ce>
+<ce>            The Guildmaster may know what to do with the body.
+<--->
+<ce>            Before you stands the lifeless body of
+<ce>            _location_’s owner. Judging by the wounds,
+<ce>            it appears he broke his neck against the wall or a
+<ce>            nearby piece of furniture after an altercation, most
+<ce>            likely with _dummy_. Wet footprints lead to
+<ce>            an opened window.
+<ce>
+<ce>            "No time to waste, the guards are here! Let's carry
+<ce>            him to the guildmaster. Name's _thief_, by
+<ce>            the way. Go!" says your guildmate as %g runs in
+<ce>            the room.
+<--->
+<ce>            Before you stands the lifeless body of
+<ce>            _location_’s owner. Judging by the wounds,
+<ce>            it appears she broke her neck against the wall or a
+<ce>            nearby piece of furniture after an altercation, most
+<ce>            likely with _dummy_. Wet footprints lead to
+<ce>            an opened window.
+<ce>
+<ce>            "No time to waste, the guards are here! Let's carry
+<ce>            her to the guildmaster. Name's _thief_, by
+<ce>            the way. Go!" says your guildmate as %g runs in
+<ce>            the room.
+
+Message: 1040
+<ce>            “Hey! Hey! I see two city guards coming our way.
+<ce>            Make it quick!”
+<--->
+<ce>            “Ye better make it quick! The guards are coming!”
+<--->
+<ce>            From an opened window, you hear the faint sound
+<ce>            of heavy plate boots breaking the residence's
+<ce>            silence. Two guards are marching towards
+<ce>            _location_.
+<--->
+<ce>            You see torchlight down the street from a nearby
+<ce>            window. A guard patrol is coming your way.
+
+Message: 1050
+<ce>            The front door opens. 
+
+Message: 1051
+<ce>            “This is the %cn city watch. Is anyone here?”
+<ce>
+<ce>            A guard enters the room you’re in and notices you.
+<ce>
+<ce>            “You don’t fit the owner’s description.
+<ce>            Who are you?” says the guard.
+<ce>
+<ce>            “Wait. That’s the owner’s corpse! Murderer!
+<ce>            Captain. come help me!”
+<--->
+<ce>            “Halt! Stop right there murdering scum! Nobody
+<ce>            breaks the law on my watch! Now come with me,
+<ce>            or it’s off to jail!” yells a guard.
+<--->
+<ce>            “This is the %cn city watch. Is anyone here?”
+<ce>
+<ce>            A guard enters the room you’re in and notices you.
+<ce>
+<ce>            “You don’t fit the owner’s description. Wait.
+<ce>            That’s the owner’s corpse! Murderer! Captain,
+<ce>            come here!” says the guard.
+<--->
+<ce>            “Break the law on my watch, will ya? Surrender,
+<ce>            or it’s off to jail!” screams a guard.
+
+Message: 1052
+<ce>            "%mn! Get those two murderers!"
+<ce>            screams a guard from inside the residence.
+<ce>
+<ce>            "Don't drop the corpse and run!"
+<ce>            says _thief_,
+
+
+Message: 1060
+<ce>            You hear someone shouting behind your back.
+<ce>
+<ce>            “Guards! GUARDS! This %ra is carrying someone
+<ce>            dead! Help!”
+<ce>
+<ce>            "Great. Get ready to run, go!"
+<ce>            says _thief_.
+<--->
+<ce>            You hear someone screaming from an opened window.
+<ce>
+<ce>            “HELP! Murderer! A %ra is carrying a
+<ce>            dead body!”
+<ce>
+<ce>            "%oth. Hold the head, I take the legs. Go!"
+<ce>            says _thief_.
+
+Message: 1070
+<ce>            That’s the body of _location_’s owner? Damn!
+<ce>            Damn it all! You two, get that to
+<ce>            ___cemetary_ right now. We have a special arrangement
+<ce>            with the caretaker of the place. Then return to me.
+<ce>            I’ll get my spymaster on that bastard thief of ours
+<ce>            who fled the scene.
+<ce>
+<--->
+<ce>            %oth! Get that out of here, ye fools! Ye
+<ce>            want the guards to trace that poor schmuck back
+<ce>            to us!? I know someone who'll dispose of the corpse.
+<ce>            Go to ___cemetary_. Once that’s done,
+<ce>            get back here. The spymaster will be on our
+<ce>            guildmate’s case. Go!
+
+Message: 1080
+<ce>            A pale-looking man wearing a dark robe approaches you.
+<ce>
+<ce>            “Ah. A fresh corpse for ___cemetary_, yes?
+<ce>            Yes. The body will be disposed of properly, of course.
+<ce>            Thank you for your... generous donation.”
+<--->
+<ce>            A pale-looking woman wearing a dark robe approaches you.
+<ce>
+<ce>            “Ah. A fresh corpse for ___cemetary_, yes?
+<ce>            Yes. The body will be disposed of properly, of course.
+<ce>            Thank you for your... generous donation.”
+
+Message: 1085
+<ce>            A man wearing a robe with Arkay’s Circle embroidered
+<ce>            on the front approaches you.
+<ce>
+<ce>            “Greetings and welcome to ___cemetary_. Please
+<ce>            put your loved one at my feet. I shall recite a prayer
+<ce>            to Arkay to help guide your partner’s soul.”
+<ce>
+<ce>            The priest of Arkay winks at you, recognizing your
+<ce>            affiliation to the Thieves Guild, and mentions that
+<ce>            you can go. He picks up the body and throws it in what
+<ce>            appears to be a mass grave.
+<--->
+<ce>            A woman wearing a robe with Arkay’s Circle embroidered
+<ce>            on the front approaches you.
+<ce>
+<ce>            “Greetings and welcome to ___cemetary_. Please
+<ce>            put your loved one at my feet. I shall recite a prayer
+<ce>            to Arkay to help guide your partner’s soul.”
+<ce>
+<ce>            The priestess of Arkay winks at you, recognizing your
+<ce>            affiliation to the Thieves Guild, and mentions that
+<ce>            you can go. She picks up the body and throws it in what
+<ce>            appears to be a mass grave.
+
+Message: 1090
+<ce>            So the body’s disposed of? Don’t look at me that way.
+<ce>            We got a good deal with a necro operating there.
+<ce>            Helps us clean up the mess when things go bad during
+<ce>            a job. Anyway, good timing. We found out our dumb
+<ce>            thief, _dummy_, is hiding in _res_.
+<ce>            Get %g2 out, unconscious preferably. No killing. I
+<ce>            wouldn’t want the necros at ___cemetary_
+<ce>            to think we like them. _thief_, you stay here.
+<ce>            I got something else for ya.
+<ce>
+<ce>            "Pleasure working with you, %pcf. See you around."
+<ce>            says _thief_.
+<--->
+<ce>            Our good friend the necro took care of the corpse?
+<ce>            Good. Our deal’s useful when things go south like
+<ce>            that botched burglary. Speaking of which, that
+<ce>            foolish thief of ours, _dummy_, is hiding in
+<ce>            _res_. If %g doesn’t listen to reason,
+<ce>            knock that damn bastard out and get %g2 here.
+<ce>            If ye kill %g2, I fear the necros will think we’re
+<ce>            getting fond of them. _thief_, good thing
+<ce>            you helped %pcf. I need you for something
+<ce>            else. Stay here.
+<ce>
+<ce>            "Sure, boss. Get that fool back here, %pcf."
+<ce>            says _thief_.
+
+Message: 1095
+<ce>            So our “devout of Arkay” took care of it? Perfect.
+<ce>            We pay that failed worshipper a good price for
+<ce>            helping us in delicate operations like this. That
+<ce>            reminds me, we need to get that amateur thief of
+<ce>            ours back here. _dummy_ thinks %g’s well hidden,
+<ce>            but we know %g’s in _res_. So
+<ce>            get there and talk %g2 to reason. Or beat %g2
+<ce>            with a stick. I don’t care. I just don’t want %g2
+<ce>            to die, else I’ll need to give gold to that weirdo
+<ce>            of Arkay again. _thief_, you don't go with
+<ce>            %pcf. Something came up for ya.
+<ce>
+<ce>            "What do ye need boss? Oh, yeah. 'Bye %pcf."
+<ce>            says _thief_.
+<--->
+<ce>            You’re back from ___cemetary_. What did you
+<ce>            think of our friend of Arkay? Expelled priests
+<ce>            make the best of friends to people like us.
+<ce>            Speaking of expelling, that dumb thief of ours
+<ce>            is hiding at _res_. The fool believes %g’s
+<ce>            safe. Get there, knock out %g3 teeth and get back
+<ce>            with %g2. If _dummy_ dies on the way, I’d
+<ce>            need to send you back to that graveyard. I don’t
+<ce>            want that. You don’t want that. Now go. Not you,
+<ce>            _thief_. I need your expertise for
+<ce>            another job.
+<ce>
+<ce>            "Pleasure workin' with ya, %pcf. See ya around."
+<ce>            says _thief_.
+
+Message: 1100
+<ce>            “Who’s there? Damn it! Get out of my house! I ain’t
+<ce>            going back to _questgiver_!”
+<--->
+<ce>            “Thieves Guild? %oth! Get out!”
+
+Message: 1110
+<ce>            Stop! Wait! Look, what happened at _location_ isn’t
+<ce>            my fault! The owner attacked me and I had no choice but to
+<ce>            defend myself! I was told the house was empty. Come on.
+<ce>            You make mistakes too, don’t you? Look, I’ll run away from
+<ce>            %reg and the Guild won’t ever see me again. Tell
+<ce>            _questgiver_ I’m gone. Honor between thieves,
+<ce>            right?
+
+Message: 1111
+<ce>            Thanks, %ra. I'll gather my things and leave %cn
+<ce>            as soon as I can.
+
+Message: 1112
+<ce>            %oth, %ra. Okay. Maybe it's better I face _questgiver_
+<ce>            and explain myself.
+
+Message: 1115
+<ce>            I’m warning you, %ra. That death was not accidental
+<ce>            at all. I’m tired of the damn Thieves Guild. The
+<ce>            owner at _location_ was my target so I could
+<ce>            be initiated in the Dark Brotherhood. Is that
+<ce>            sending chills in your bones, lackey? Leave my
+<ce>            house now or I will send your soul to Sithis. 
+
+Message: 1120
+<ce>            "%oth, that corpse's heavy."
+<--->
+<ce>            "Wait a sec. %oth. My back. Okay let's go."
+<--->
+<ce>            "What's that stench? Is that you, %lev? Wait.
+<ce>            It's from the corpse. %oth."
+<--->
+<ce>            "Could use a necromancer right now, make this corpse
+<ce>            walk itself, haha!"
+<--->
+<ce>            "Wish this poor sod went on a diet before we
+<ce>            picked it up..."
+<--->
+<ce>            "I hear they do this a lot in Sentinel, but they are
+<ce>            usually still kicking and screaming."
+<--->
+<ce>            "I wish Levitate could be cast on Target."
+<--->
+<ce>            "No clue how I'm going to get these blood stains out..."
+<--->
+<ce>            "How much do you think a general store will pay for this?"
+<--->
+<ce>            "Hey don't you have a wagon? Why aren't we using that?"
+
+Message: 1130
+_dummy_
+ 
+    The Dark Brotherhood has been watching
+ you. You have slain without sanction several
+ times. You must now join us, or be counted
+ as our foe. Travel to __apo_
+ in %reg and see %mn,
+ who will give you further instructions.
+ 
+<ce>                               A Brother
+<--->
+_dummy_
+ 
+    The Dark Brotherhood has been watching
+ you. You have slain without sanction several
+ times. You must now join us, or be counted
+ as our foe. Travel to __apo_
+ in %reg and see %mn,
+ who will give you further instructions.
+ 
+<ce>                               A Sister
+
+Message: 1200
+<ce>            As you close the door, you hear someone shouting
+<ce>            from another room.
+<ce>
+<ce>            “_friend_? Come quick! I… I killed someone!”
+
+Message: 1210
+<ce>            “You... you’re not _friend_. I… I
+<ce>            murdered someone! That thief wanted to rob
+<ce>            my house. It was self defense!”
+<ce>
+<ce>            The man’s eyes show fear as he stares at
+<ce>            your attire, guessing your affiliation to
+<ce>            the Thieves Guild.
+<ce>
+<ce>            “No! Please! Don’t kill me, please! Your
+<ce>            friend tried to attack me and I took a
+<ce>            knife and… by %god...
+<ce>
+<ce>
+<ce>            Do you avenge your guildmate’s death?
+
+Message: 1211
+<ce>            Defenseless, disposing of _dummy_’s
+<ce>            killer is child’s play. The man falls on the
+<ce>            floor, lifeless, next to _dummy_'s body.
+
+Message: 1212
+<ce>            The front door opens. The visitor, a burly
+<ce>            man wearing heavy armor must be the
+<ce>            _friend_ the owner was talking about.
+<ce>
+<ce>            “%mn2! Die, %ra! DIE!” screams
+<ce>            _friend_ as %g runs towards you, %g3 eyes
+<ce>            red with fury.
+
+Message: 1213
+<ce>            "By %god… by %god.. Forgive me, %god…"
+<ce>
+<ce>            The man falls into a catatonic state.
+
+Message: 1220
+<ce>            You lift _dummy_’s body over your shoulder,
+<ce>            hoping you will not attract attention on the way to the
+<ce>            guildmaster.
+
+Message: 1230
+<ce>            You hear someone shouting behind your back.
+<ce>
+<ce>            “Guards! GUARDS! This %ra is carrying someone dead! Help!”
+<--->
+<ce>            You hear someone screaming from inside a nearby house.
+<ce>
+<ce>            “HELP! Murderer! A %ra is carrying a dead body!”
+
+
+Message: 1400
+<ce>            So that _dummy_’s gone from %reg. I guess we
+<ce>            should have acted sooner, but %g’s the fool. Not us. We
+<ce>            have eyes all over the Iliac Bay.. I’m sure we’ll hear
+<ce>            from one of our other guild halls soon enough. Thank you
+<ce>            for clearing that mess, %lev. Much appreciated.
+
+Message: 1401
+<ce>            _dummy_, ye goddamn dummy! Yer botched up
+<ce>            burglary almost got the guards here, ye know that?
+<ce>            Consider yerself expelled. Yeah that’s right.
+<ce>            That kind of mistake can be only tolerated once.
+<ce>            It was good that %pcf was here to get us out
+<ce>            of this mess and to get yer sorry arse back here.
+<ce>            %pcf, good work. Take yer pay and leave us
+<ce>            please. We ain’t done with _dummy_ yet. Hehe.
+
+Message: 1402
+<ce>            %oth. I wished _dummy_ alive so we could teach
+<ce>            %g2 a manner or two before expelling %g3 sorry hide from
+<ce>            here. Ye did good on that job, %pcf. Disposing
+<ce>            of that body and killin’ _dummy_ brings us full
+<ce>            circle, I think. Nobody will trace that back to us.
+
+Message: 1403
+<ce>            _dummy_, an assassin!? %oth, that takes things
+<ce>            to another level. We don’t want problems with the Dark
+<ce>            Brotherhood. As much as I would love to see %g2 dead,
+<ce>            I think you did the right thing to let %g2 live. Out
+<ce>            of sight, out of mind. Right, %pcf? You certainly
+<ce>            earned your pay for cleaning up that damn mess for us.
+
+Message: 1404
+<ce>            %oth, _dummy_’s with the Dark Brotherhood
+<ce>            and ye killed %g2!? %oth! Oh, right. Damn bastard’s
+<ce>            only an initiate so I doubt they’ll cry over %g3 death.
+<ce>            I think you did the right thing, killing that fool and
+<ce>            cleaning up %g3 mess.
+
+Message: 1500
+<ce>            %oth, that’s _dummy_ alright. Damn it!
+<ce>            Was the owner still there? What did you do?
+<ce>            Avenge _dummy_?
+
+Message: 1501
+<ce>            Good. I’m not a vengeance kind of fellow, but
+<ce>            _dummy_ was well respected around here.
+<ce>            It’ll put some of us at ease to know %g3 killer’s gone.
+<ce>            Leave %g3 to me, %lev. I’ll get a priest of Arkay and
+<ce>            hold a proper funeral. 
+<--->
+<ce>            %oth! Are you trying to get the Dark
+<ce>            Brotherhood’s attention? You did good bringing
+<ce>            _dummy_ here, but avenging %g2… that wasn’t wise.
+<ce>            Anyway, I doubt they’ll trace that back to us.
+<ce>            Let’s hope so.
+
+Message: 1502
+<ce>            That’s a shame. _dummy_ was loved around
+<ce>            the hall here. Leave %g3 body here. I’ll send
+<ce>            for a priest of Arkay and get %g3 proper
+<ce>            funeral rites.
+<--->
+<ce>            Then you did the right thing, %lev.
+<ce>            We wouldn’t want to attract more attention.
+<ce>            Leave _dummy_’s body here. I’ll send
+<ce>            for a priest of Arkay. Poor fellow…
+<ce>            %g was well liked around here.	
+
+Message: 1600
+<ce>            You had one day to check out on _dummy_'s
+<ce>            status. Either %g's alive or not. You may never know.
+
+
+QBN:
+Item _reward_ gold
+Item _corpse_ dead_body
+Item _dummycorpse_ dead_body
+Item _letter_ letter used 1130
+
+Person _questgiver_ group Questor male
+Person _dummy_ faction The_Thieves_Guild
+Person _thief_ faction The_Thieves_Guild
+Person _owner_ group Resident1 male
+Person _friend_ group Resident1 male
+--Person _db_ faction The_Dark_Brotherhood
+
+Place _location_ local house
+Place _res_ local house
+Place _cemetary_ remote graveyard
+Place _apo_ remote apothecary
+
+Foe _necro_ is Mage
+Foe _priest_ is Healer
+Foe _ass_ is Assassin
+Foe _burglar_ is Burglar
+Foe _friendfoe_ is Warrior
+
+Clock _timer_ 24:00
+Clock _haltin1_ 00:05
+Clock _haltin2_ 00:02
+Clock _haltex_ 00:20 00:30
+Clock _haltex2_ 00:20 00:30
+Clock _assleave_ 00:03
+Clock _thieftalk1_ 00:05 00:10
+Clock _thieftalk2_ 10:00 24:00
+Clock _thieftalk3_ 10:00 24:00
+Clock _graveyard_ 00:01
+
+variable _friendno_
+--variable _pcdbfriend_
+variable _corpsepicked_
+variable _foeass_
+variable _foeburg_
+variable _necro_
+variable _priest_
+variable _graveyard_
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    dialog link for location _apo_
+    dialog link for location _res_
+    give item _letter_ to _ass_
+    pc at _location_ do _inside_
+    pc at _cemetary_ do _insidecem_
+    pc at _res_ do _insideres_
+    have _corpse_ set _pickcorpse_
+    have _dummycorpse_ set _pickdummycorpse_
+    pick one of _sc1_ _sc2_
+    pick one of _foeass_ _foeass_
+    pick one of _necro_ _priest_
+
+_inside_ task:
+
+_insidecem_ task:
+    start timer _graveyard_
+    stop timer _haltex_
+
+_insideres_ task:
+
+-- Scenario 1 : Owner dead
+
+-- 1.1 Burgled House
+
+_sc1_ task:
+    place item _corpse_ at _location_
+
+_enter1_ task:
+    when _inside_ and _sc1_
+    start timer _haltin1_
+    say 1020
+
+_pickcorpse_ task:
+    start timer _thieftalk1_
+
+_thiefhelp01_ task:
+    when _pickcorpse_ and not _haltin2_ and not _corpsepicked_
+    say 1030
+    add _thief_ face
+    take _corpse_ from pc
+    setvar _corpsepicked_
+
+_thiefhelp02_ task:
+    when _pickcorpse_ and _haltin2_ and not _corpsepicked_
+    say 1035
+    add _thief_ face
+    take _corpse_ from pc    
+    setvar _corpsepicked_
+
+_warn1_ task:
+    when _haltin1_ and _inside_
+    say 1040
+    start timer _haltin2_
+
+_guardsin_ task:
+    when _haltin2_ and _inside_
+    say 1050
+    say 1051
+    setplayercrime Murder
+    spawncityguards immediate
+
+_guardsext1_ task:
+    when _haltin2_ and not _inside_
+    setplayercrime Murder
+    spawncityguards immediate    
+    say 1052
+-- If PC is spotted inside, guards are spawned outside too
+
+_guardsext2_ task:
+    when _haltex_ and not _inside_
+    setplayercrime Murder
+    spawncityguards immediate    
+-- If PC spends 20-30 minutes outside while carrying the corpse, spawn guards    
+
+_corpseqg_ task:
+    when _pickcorpse_ and _qgclicked_ and not _corpsegiven_
+    say 1070
+    stop timer _timer_
+    stop timer _haltex_
+    stop timer _thieftalk1_
+    start timer _thieftalk2_
+	log 1011 step 1
+    reveal _cemetary_
+
+_exitcity_ task:
+    when pc exits city
+    stop timer _haltex_
+
+
+-- 1.2 Cemetary
+
+_cemetary1_ task:
+    when _insidecem_ and _graveyard_ and _necro_
+    say 1080
+    restrain foe _necro_
+    create foe _necro_ every 00 minutes 1 times with 100% success
+    setvar _corpsegiven_
+    clear _qgclicked_
+    stop timer _thieftalk2_
+    stop timer _thieftalk3_
+
+_cemetary2_ task:
+    when _insidecem_ and _graveyard_ and _priest_
+    say 1085
+    restrain foe _priest_
+    create foe _priest_ every 00 minutes 1 times with 100% success
+    setvar _corpsegiven_
+    clear _qgclicked_
+    stop timer _thieftalk2_
+    stop timer _thieftalk3_
+
+-- 1.3 Track Thief
+
+variable _corpsegiven_
+_trackthief1_ task:
+    when _corpsegiven_ and _qgclicked_ and _necro_
+	log 1012 step 2
+    say 1090
+    drop _thief_ face
+    add dialog for location _res_
+
+_trackthief2_ task:
+    when _corpsegiven_ and _qgclicked_ and _priest_
+	log 1012 step 2
+    say 1095
+    drop _thief_ face
+    add dialog for location _res_ 
+
+_spawnass_ task:
+    when _foeass_ and _corpseqg_
+    place foe _ass_ at _res_
+
+_spawnburg_ task:
+    when _foeburg_ and _corpseqg_
+    place foe _burglar_ at _res_
+
+_greetres_ task:
+    when _insideres_ and _sc1_
+    clear _qgclicked_
+    say 1100
+
+_injburg_ task:
+    injured _burglar_
+    prompt 1110 yes _burgyes_ no _burgno_
+
+_burgyes_ task:
+    restrain foe _burglar_
+    say 1111
+
+_burgno_ task:
+    remove foe _burglar_
+    add _dummy_ face
+    say 1112
+
+_injass_ task:
+    injured _ass_
+    prompt 1115 yes _assyes_ no _assno_
+
+_assyes_ task:
+    start timer _assleave_
+    restrain foe _ass_
+
+_assno_ task:
+
+_slayburg_ task:
+    killed _burglar_
+
+_slayass_ task:
+    killed _ass_
+
+-- 1.4 Success
+
+_success1_ task:
+    when _burgyes_ and _qgclicked_ and not _slayburg_
+    say 1400
+    give pc _reward_
+    end quest
+
+_success2_ task:
+    when _burgno_ and _qgclicked_
+    say 1401
+    give pc _reward_
+    end quest
+
+_success3_ task:
+    when _slayburg_ and _qgclicked_
+    say 1402
+    give pc _reward_
+    end quest
+
+_success4_ task:
+    when _assyes_ and _qgclicked_ and not _slayass_
+    say 1403
+    give pc _reward_
+    end quest
+
+_success5_ task:
+    when _slayass_ and _qgclicked_
+    say 1404
+    give pc _reward_
+    end quest
+
+-- Scenario 1 : Timers
+
+_corpsetimer_ task:
+    when _pickcorpse_ and not _inside_
+    stop timer _haltin1_
+    stop timer _haltin2_
+    start timer _haltex_
+-- When PC carries the corpse outisde, stop the inside timers and start the ext. one
+
+_haltin1_ task:
+
+_haltin2_ task:
+
+_haltex_ task:
+    say 1060
+
+_assleave_ task:
+    unrestrain foe _ass_
+
+_thieftalk1_ task:
+    say 1120
+
+_thieftalk2_ task:
+    say 1120
+    start timer _thieftalk3_
+
+_thieftalk3_ task:
+    say 1120
+
+-- Scenario 2 : Thief dead
+
+_sc2_ task:
+    place item _dummycorpse_ at _location_
+    place npc _owner_ at _location_
+
+_enter2_ task:
+    when _inside_ and _sc2_
+    say 1200
+
+_ownerclicked_ task:
+    clicked npc _owner_
+
+_ownerprompt_ task:
+    when _ownerclicked_
+    prompt 1210 yes _killowner_ no _spareowner_
+
+_killowner_ task:
+    say 1211
+    hide npc _owner_
+    pick one of _friendyes_ _friendno_
+
+_friendyes_ task:
+    say 1212
+    create foe _friendfoe_ every 0 minutes 1 times with 100% success
+
+_pickdummycorpse_ task:
+    say 1220
+    take _dummycorpse_ from pc
+
+_spareowner_ task:
+    say 1213
+
+_guardsextsc2_ task:
+    when _haltex2_ and not _inside_
+    setplayercrime Murder
+    spawncityguards immediate      
+
+--_pcdbrepcheck_ task:
+--    repute with _db_ exceeds 1 do _pcdbfriend_
+
+--_dbinvitecheck1_ task:
+--    when _killowner_ and not _pcdbfriend_
+--     pick one of _dbinviteyes_ _dbinviteno_ _dbinviteno_ _dbinviteno_ _dbinviteno_
+   
+--_dbinviteyes_ task:
+--    start quest JOTGDB
+
+--_dbinviteno_ task:
+
+--2.1 -- Success
+
+_sc2success_ task:
+    when _qgclicked_ and _pickdummycorpse_
+    prompt 1500 yes _sc2promptyes_ no _sc2promptno_
+
+_sc2promptyes_ task:
+    say 1501
+    give pc _reward_
+    end quest
+
+_sc2promptno_ task:
+    say 1502
+    give pc _reward_
+    end quest   
+
+--Scenario 2 timer : 
+
+_dummycorpsetimer_ task:
+    when _pickdummycorpse_ and not _inside_
+    start timer _haltex2_
+
+_haltex2_ task:
+    say 1230
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_questdone_ task:
+    when _burgyes_ or _burgno_ or _assyes_ or _assno_ or _slayass_ or _slayburg_
+
+_clearclicksc1a_ task:
+	when _qgclicked_ and _sc1_ and not _pickcorpse_ 
+	clear _qgclicked_ _clearclicksc1a_ 
+
+_clearclicksc1b_ task:
+	when _qgclicked_ and _clearclicksc1a_ and not _corpsegiven_ 
+	clear _qgclicked_ _clearclicksc1b_ 
+
+_clearclicksc1c_ task:
+	when _qgclicked_ and _clearclicksc1c_ and not _questdone_ 
+	clear _qgclicked_ _clearclicksc1c_
+
+_clearclicksc2_ task:
+	when _qgclicked_ and _sc2_ and not _pickdummycorpse_ 
+	clear _qgclicked_ _clearclicksc2_ 
+
+_timer_ task:
+    say 1600
+    end quest

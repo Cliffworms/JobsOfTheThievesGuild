@@ -1,0 +1,24 @@
+-- Cliffworms' Jobs of the Thieves Guild quest pack list
+
+-- name:        filename of QRC txt file
+-- group:       guild group from FactionFile.GuildGroups enum, or social group from FactionFile.SocialGroups enum
+-- membership:  N=non-member, M=member, P=prospect, T=Akatosh, A=Arkay, D=Dibella, J=Julianos, K=Kynareth, R=Mara, S=Stendarr, Z=Zenithar
+-- minReq:      minimum requirement to be offered the quest: (val < 10) = guild rank / player level, or (val >= 10) = min reputation
+-- flag:        0 = nothing, X = adult/nudity, 1 = one time quest
+-- notes:
+
+schema: *name, group, membership, minReq, flag, notes
+
+JOTG01, GeneralPopulace, M, 0, 0, Loaned Gold Recovery - Recover gold from indebted fella
+JOTG02, GeneralPopulace, M, 1, 0, Letter of Pardon - Steal a document from a palace
+JOTG03, GeneralPopulace, M, 0, 0, Healer! - Heal or find a priest to heal a guildmate
+JOTG04, GeneralPopulace, M, 0, 0, Stolen Casket - Unlock casket with a spell
+JOTG05, GeneralPopulace, M, 0, 0, A Dame to Hurt For - Beat up prostitute's aggressive customer
+JOTG06, GeneralPopulace, M, 1, 0, Mages Guild Burglary - Steal a magical trinket from the Mages Guild
+JOTG07, GeneralPopulace, M, 0, 0, Taking Care of Business - Find out why a shop's stopped paying for protection
+JOTG08, GeneralPopulace, M, 5, 0, Wizard Help - Hire a wizard to protect the Guild
+JOTG09, GeneralPopulace, M, 2, 0, Jewel Smuggling - Recover jewel from an adventurer
+JOTG10, GeneralPopulace, M, 3, 0, Hostage Exchange - Proceed to an hostage exchange with the Wharf Rats
+JOTG11, GeneralPopulace, M, 0, 0, Botched Burglary - Find out why a thief never returned from a burglary
+JOTG12, GeneralPopulace, M, 4, 0, First Warning - Invite a freelance thief in the Thieves Guild
+--JOTGDB, DarkBrotherhood, N, 0, 0, Dark Brotherhood Invitation timer

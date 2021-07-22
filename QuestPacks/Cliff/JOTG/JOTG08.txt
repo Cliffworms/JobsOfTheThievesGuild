@@ -1,0 +1,536 @@
+Quest: JOTG08
+DisplayName: Wizard Help
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            The higher ups have been talking about
+<ce>            having better protection against potential
+<ce>            rivals. They came up with the idea of
+<ce>            hiring a wizard to help us. I thought of
+<ce>            giving that task to you. How about it?
+<--->
+<ce>            We need to protect ourselves from the
+<ce>            damn Wharf Rats. I thought of hiring a
+<ce>            wizard from the Mages Guild. You could
+<ce>            be our messenger, what do you say?
+<--->
+<ce>            Maybe having a mage working for us could
+<ce>            help us in some of our jobs, you know.
+<ce>            Unlocking chests, putting potential
+<ce>            witnesses to sleep, identifying magical
+<ce>            items. That sort of stuff. You got some
+<ce>            time to speak to a pointy-hat?
+
+RefuseQuest:  [1001]
+<ce>            What’s the matter, %lev? You don’t
+<ce>            believe in the safety of your guildmates?
+<ce>            By the Shadow, get out of here.
+
+AcceptQuest:  [1002]
+<ce>            I know one who may be interested. We worked
+<ce>            together a long time ago. Seek out
+<ce>            _dummy_ in __magesguild_.
+<ce>            Don’t be surprised if %g asks for a favor in
+<ce>            return or something. I expect to see you back
+<ce>            with _dummy_ before =timer_ days.
+<ce>            Safe travels.
+<--->
+<ce>            Good. There’s a mage who owes me a favor.
+<ce>            _dummy_ from the Mages Guild in
+<ce>            __magesguild_. Being the snobs they
+<ce>            are, %g may ask for something in return
+<ce>            even if %g owes me. Make sure you do what
+<ce>            it takes to convince %g2 to join us. I’ll
+<ce>            wait =timer_ days. ‘Bye, %lev.
+
+QuestFail:  [1003]
+<ce>            There’s no need to talk if _dummy_ isn’t with
+<ce>            you, %lev. I’ll be waiting.
+
+QuestComplete:  [1004]
+<ce>            _dummy_! You old fart, how have you been?
+<ce>            Lemme give that fella %pg3 pay and let’s
+<ce>            hit the tavern, shall we? Here, %lev.
+<ce>            Thanks for your help.
+
+RumorsDuringQuest:   [1005]
+It’s known throughout the scholarly types that _dummy_ and _rival_ have been rivals since their early days at the Arcane University.
+
+RumorsPostFailure:   [1006]
+A Thieves Guild hideout has been attacked by their rivals, the Wharf Rats. Few of them escaped.
+
+RumorsPostSuccess:   [1007]
+There’s a house in __questgiver_ that’s been emanciating with magical energy lately. How strange. A wizard must have made his home there.
+
+QuestorPostsuccess:  [1008]
+You know, _dummy_ has been saying good things about you. ‘Said you were a great lab rat.
+
+QuestorPostfailure:  [1009]
+Did ye hear the rumors? One of our hideouts that lacked magical security was attacked by those damn Wharf Rats. If ye had found _dummy_ in time, that wouldn’t have happened.
+
+Message: 1010
+%qdt
+_questgiver_ of the Thieves Guild in
+___questgiver_ sent me to the
+__magesguild_ Mages Guild where
+I am to try to recruit _dummy_,
+a wizard, to bolster the guild’s defenses.
+I have =timer_ days to bring %g2 to the guildhall.
+
+Message: 1013
+%qdt
+_dummy_ asked for a favor (of course)
+before helping the Thieves Guild. I am to break
+into %g3 rival’s vacation residence,
+_rivalres_ in __rivalres_,
+and mess up _rival_’s ingredients by
+replacing %g3 _ing1_ with
+_dummy_’s _ing2_.
+
+Message: 1015
+%qdt
+_dummy_ asked for a favor (of course)
+before helping the Thieves Guild. I must break
+into %g3 rival’s vacation residence,
+_rivalres_ in __rivalres_,
+and steal _rival_’s _magicitem_.
+
+Message: 1018
+%qdt
+_dummy_ asked for a favor (of course)
+before helping the Thieves Guild. I must break
+into %g3 rival’s vacation home,
+_rivalres_ in __rivalres_,
+and replace _rival_’s personal casket
+with a fake one given by _dummy_. 
+
+Message: 1020
+<ce>            Ah, so _questgiver_ sends his emissary? If %g
+<ce>            wanted to assure his guild’s safety, %g should have come
+<ce>            to me. No matter, since your arrival is most fortunate.
+<ce>            If you desire to have my knowledge and prowess at your
+<ce>            guild’s disposal, you will have to ruin my rival’s
+<ce>            experiment. As a thief, rogue or whatever your profession
+<ce>            is, this should be "right up your alley" as you people say.
+
+Message: 1023
+<ce>            _rival_, a snooty if not forgettable
+<ce>            colleague of mere renown, has made my life miserable
+<ce>            in the past weeks. While %g says he's fond of alchemy,
+<ce>            %g barely knows the difference between a retort and an
+<ce>            alembic. Still, %g’s working on a potion for %g3
+<ce>            evaluation. If you would be so kind as to switch the
+<ce>            _ing1_ with this _ing2_, %g will never notice
+<ce>            notice it. My rival does %g3 experiments in %g3 vacation
+<ce>            home, _rivalres_ in __rivalres_.
+<ce>            Do not disappoint me.
+
+Message: 1025
+<ce>            I’m positive you will find this fun. _rival_
+<ce>            is my rival’s name and %g has acquired a magical
+<ce>            _magicitem_ during an expedition to some long lost
+<ce>            labyrinth. I guess a standard burglary in a wizard’s
+<ce>            home won’t make you afraid? _rival_
+<ce>            stores %g3 things in %g3 vacation home,
+<ce>            _rivalres_ in __rivalres_.
+<ce>            Well now, go fetch. Ta-ta.
+
+Message: 1027
+<ce>            Splendid. So this rival of mine, _dummy_,
+<ce>            has a small enchanted chest at %g3 vacation home.
+<ce>            I am most curious to learn what %g hides in there.
+<ce>            Maybe research notes that would make me famous. I’ve
+<ce>            enchanted this small chest to look exactly like the
+<ce>            one %g has. Opening it may surprise %g2 with a bang,
+<ce>            if you know what I mean. Simply go to %g3 house,
+<ce>            _rivalres_ in __rivalres_
+<ce>            and replace %g3 chest with this one. I’ll be
+<ce>            waiting, %ra.
+
+Message: 1030
+<ce>            Before you lay several alchemical apparatuses and,
+<ce>            among the ingredients, the _ing1_ _dummy_
+<ce>            asked you to replace with your _ing2_. You replace
+<ce>            the ingredients, carefully putting the _ing2_ in
+<ce>            the exact same place as the _ing1_.
+
+Message: 1032
+<ce>            Before you lay several alchemical apparatuses and,
+<ce>            among the ingredients, the _ing1_ _dummy_
+<ce>            asked you to replace with your _ing2_.
+<ce>            As you replace the ingredients with care, a flask
+<ce>            of gelatinous liquid catches your eye. Do you drink
+<ce>            from it?
+<--->
+<ce>            Before you lay several alchemical apparatuses and,
+<ce>            among the ingredients, the _ing1_ _dummy_
+<ce>            asked you to replace with your _ing2_.
+<ce>            As you replace the ingredients with care, a flask
+<ce>            of deep gray liquid, balls of white jelly bobbing
+<ce>            at the surface catches your eye. Do you drink from
+<ce>            it?
+<--->
+<ce>            Before you lay several alchemical apparatuses and,
+<ce>            among the ingredients, the _ing1_ _dummy_
+<ce>            asked you to replace with your _ing2_.
+<ce>            As you replace the ingredients with care, a flask
+<ce>            of muddy brown liquid catches your eye. Do you drink
+<ce>            from it?
+
+
+Message: 1034
+<ce>            As the liquid goes down your throat and into your
+<ce>            stomach, you somehow feel better. The potion may
+<ce>            have had healing properties.
+
+Message: 1035
+<ce>            The potion has a sweet taste and you do not feel
+<ce>            any effects from drinking it.
+
+Message: 1036
+<ce>            You decide it is wiser and safer to leave the potion
+<ce>            as it is.
+
+Message: 1038
+<ce>            Suddenly, _dummy_ appears without a sound
+<ce>            in front of you.
+<ce>
+<ce>            
+<ce>            "What's that look on your face? You have never seen the
+<ce>            Recall spell in action before? Ah! _rival_
+<ce>            will have a nasty surprise if %g doesn’t notice the
+<ce>            change in %g3 ingredients. Hopefully %g knows a healer
+<ce>            or the newly-brewed potion will first be tested on a cat.
+<ce>            You can keep the _ing1_, I do not mind. The deed is
+<ce>            done then. Lead the way to _questgiver_, %ra."
+
+Message: 1040
+<ce>            Suddenly, _dummy_ appears without a sound
+<ce>            in front of you.
+<ce>
+<ce>            
+<ce>            "What's the matter? You have never seen the Recall spell
+<ce>            in action before? Huh, impressive _magicitem_
+<ce>            indeed. I hope _rival_ did not put a nasty trap
+<ce>            upon taking it. I guess not, since you’re still alive. I
+<ce>            promised I’d help _questgiver_ if you helped me.
+<ce>            Lead the way."
+
+Message: 1045
+<ce>            Suddenly, _dummy_ appears without a sound
+<ce>            in front of you.
+<ce>
+<ce>            
+<ce>            "What's the matter? You have never seen the Recall spell
+<ce>            in action before? Huh, impressive _magicitem_
+<ce>            indeed. I hope _rival_ did not put a nasty trap
+<ce>            upon taking it. Wait, that sounds like an atronach. Fly
+<ce>            you fool! Run!"
+
+Message: 1050
+<ce>            Attached on one of the spider’s still twitching hairy
+<ce>            leg, you notice a name tag on which 
+<ce>            "Property of _rival_" is inscribed.
+
+Message: 1053
+<ce>            You replace _dummy_'s casket with _rival_'s.
+
+Message: 1055
+<ce>            Suddenly, _dummy_ appears without a sound
+<ce>            in front of you.
+<ce>            
+<ce>            
+<ce>            "What's wrong? You've never seen the Recall spell
+<ce>            in action before? Hmmm, what a marvellous piece of
+<ce>            furniture. The magicka emanating from within is
+<ce>            fascinating. Ah, but I won’t bore with the details.
+<ce>            You don’t look like the magic sort anyway. Well, a
+<ce>            promise is a promise. Lead the way to _questgiver_,
+<ce>            %ra."
+
+Message: 1060
+<ce>            You hear _dummy_ saying behind your shoulders :
+<ce>            
+<ce>            
+<ce>            "Well, I can't say I don't enjoy strolling around
+<ce>            the Bay with you, but you don't seem too serious
+<ce>            about me helping out your guild. I'll recall myself
+<ce>            back to my house, where I shall think of you
+<ce>            reporting your failure to _questgiver_
+<ce>            with a deep smile. Ta-ta!"
+<ce>
+<ce>            
+<ce>            _dummy_ vanishes behind your eyes.
+
+Message: 1070
+<ce>            A servant welcomes you inside _rival_'s
+<ce>            vacation home, seemingly irritated.
+<ce>
+<ce>            "I believe you have the wrong house, %ra.
+<ce>            Leave now, or I shall call the guards."
+
+Message: 1075
+<ce>            "I warned you" says the servant, before
+<ce>            rushing outside and getting the attention
+<ce>            of a nearby city guard.
+
+Message: 1080
+<ce>            Wait. You did what I asked in broad daylight
+<ce>            in front of _rival_'s servant?
+<ce>            What sort of a thief are you? Oh. I hear the
+<ce>            guards coming. Hold still will you?
+
+Message: 1085
+<ce>            Still in one piece? Make sure all your fingers
+<ce>            are there. I have bad memories of teleporting
+<ce>            only half of an old lover of mine. Oh great.
+<ce>            Where are we? That's not where I aimed for
+<ce>            before teleporting us. Let's hope we're not too
+<ce>            far away from your guild hall. Lead the way,
+<ce>            thief.
+
+QBN:
+Item _reward_ gold
+Item _ing1_ large_plant
+Item _ing2_ small_plant
+Item _magicitem_ magic_item 
+Item _casketreal_ item class 1 subclass 8
+Item _casketfake_ item class 1 subclass 8
+
+Person _questgiver_ group Questor male
+Person _dummy_ faction The_Mages_Guild
+Person _rival_ faction The_Mages_Guild
+
+Foe _atronach1_ is Ice_atronach
+Foe _atronach2_ is Fire_atronach
+Foe _atronach3_ is Iron_atronach
+Foe _atronach4_ is Flesh_atronach
+Foe _pet_ is Spider
+
+Place _magesguild_ remote magery
+Place _rivalres_ remote house2
+Place _dung_ remote dungeon
+
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _halt_ 00:10
+
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    place npc _dummy_ at _magesguild_
+    pc at _rivalres_ set _inside_
+
+_inside_ task:
+
+_day_ task:
+    daily from 6:00 to 18:00
+
+_servantgreet_ task:
+    when _inside_ and _day_
+    say 1070
+    start timer _halt_
+
+_halt_ task:
+    say 1075
+    spawncityguards immediate
+    setplayercrime Theft
+
+_stophalt_ task:
+    when not _inside_
+    stop timer _halt_
+
+_scenario_ task:
+    when _dummyclicked_
+    say 1020
+    pick one of _scenario1_ _scenario2_ _scenario3_
+
+-- 1- Switch ingredients
+
+_scenario1_ task:
+    say 1023
+    get item _ing2_
+    place item _ing1_ at _rivalres_
+    log 1013 step 1
+
+_get1_ task:
+    when _inside_
+    have _ing1_ set _switch_
+
+_switch_ task:
+    pick one of _potionyes_ _potionno_
+    take _ing2_ from pc
+    get item _ing1_
+    make _ing1_ permanent
+
+_potionyes_ task:
+    prompt 1032 yes _drinkyes_ no _drinkno_
+    
+_potionno_ task:
+    say 1030
+
+_drinkyes_ task:
+    pick one of _potion_ _poison_
+
+_drinkno_ task:
+    say 1036
+
+_potion_ task:
+    say 1034
+    cure Swamp_Rot
+
+_poison_ task:
+    say 1035
+
+_accompany1_ task:
+    when _potionno_ or _drinkno_ or _potion_ or _poison_
+    say 1038
+    hide npc _dummy_
+    add _dummy_ face
+
+_success1_ task:
+    when _accompany1_ and _qgclicked_ and not _poison_
+    give pc _reward_
+    end quest
+
+_success1d_ task:
+    when _accompany1_ and _qgclicked_ and _poison_
+    give pc _reward_
+    make pc ill with Swamp_Rot
+    end quest
+
+-- 2- Steal Magic Item
+
+_scenario2_ task:
+    say 1025
+    place item _magicitem_ at _rivalres_
+    log 1015 step 1
+
+_get2_ task:
+    when _inside_
+    have _magicitem_ set _foechance_
+
+_foechance_ task:
+    pick one of _atrospawn_ _noatro_
+
+_atrospawn_ task:
+    pick one of _atro1_ _atro2_ _atro3_ _atro4_
+
+_noatro_ task:
+    say 1040
+
+_atro1_ task:
+    say 1045
+    place foe _atronach1_ at _rivalres_
+
+_atro2_ task:
+    say 1045
+    place foe _atronach2_ at _rivalres_
+
+_atro3_ task:
+    say 1045
+    place foe _atronach3_ at _rivalres_
+
+_atro4_ task:
+    say 1045
+    place foe _atronach4_ at _rivalres_
+
+_accompany2_ task:
+    when _noatro_ or _atro1_ or _atro2_ or _atro3_ or _atro4_
+    hide npc _dummy_
+    add _dummy_ face
+
+_success2_ task:
+    when _accompany2_ and _qgclicked_
+    give pc _reward_
+    end quest
+
+-- 3 - Switch caskets
+
+_scenario3_ task:
+    say 1027
+    get item _casketfake_
+    place item _casketreal_ at _rivalres_
+    place foe _pet_ at _rivalres_
+    log 1018 step 1
+
+_get3_ task:
+    when _inside_
+    have _casketreal_ set _switch3_   
+
+_switch3_ task:
+    say 1053
+    take _casketfake_ from pc
+
+_petslain_ task:
+    killed 1 _pet_ saying 1050
+
+_accompany3_ task:
+    when _switch3_
+    say 1055
+    hide npc _dummy_
+    add _dummy_ face
+
+_success3_ task:
+    when _accompany3_ and _qgclicked_
+    give pc _reward_
+    end quest
+
+-- Other control tasks
+
+_teleport1_ task:
+    when _accompany1_ and _day_ and _inside_
+    say 1080
+
+_tpdung1_ task:
+    when _teleport1_
+    teleport pc to _dung_
+    say 1085
+
+_teleport2_ task:
+    when _accompany2_ and _day_ and _inside_
+    say 1080
+
+_tpdung2_ task:
+    when _teleport2_
+    teleport pc to _dung_
+    say 1085   
+
+_teleport3_ task:
+    when _accompany3_ and _day_ and _inside_
+    say 1080
+
+_tpdung3_ task:
+    when _teleport3_
+    teleport pc to _dung_
+    say 1085   
+
+_dummyclicked_ task:
+    clicked npc _dummy_
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+ 
+_timer_ task:
+    end quest
+
+_dummyleaves1_ task:
+    when _timer_ and _accompany1_
+    say 1060
+
+_dummyleaves2_ task:
+    when _timer_ and _accompany2_
+    say 1060   
+
+_dummyleaves3_ task:
+    when _timer_ and _accompany3_
+    say 1060         
+
+_resolution_ task:
+    when _accompany1_ or _accompany2_ or _accompany3_
+
+_clearclickqg_ task:
+    when _qgclicked_ and not _resolution_
+    clear _qgclicked_ _clearclickqg_

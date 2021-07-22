@@ -1,0 +1,221 @@
+Quest: JOTG05
+DisplayName: A Dame to Hurt For
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            No thievery job today, %pcf, but Ma'am %ln
+<ce>            requested we help her about one of her girls. Ye see,
+<ce>            somebody roughed up one of them. Nobody’s allowed to
+<ce>            do that. Care to give a beating to the bastard who
+<ce>            did this?
+<--->
+<ce>            As ye may know, %ra, we have a deal with
+<ce>            Ma'am %ln's girls and boys working the streets
+<ce>            for the lonely souls of %cn. There are two
+<ce>            rules for the customers. First, no violence.
+<ce>            Second, they break rule number one, we break
+<ce>            their bones. Yesterday, somebody broke the
+<ce>            first rule and the Ma'am's angry. Do ye have
+<ce>            time to take care of rule number two, %ra?
+
+RefuseQuest:  [1001]
+<ce>            If ye only want thievery jobs, ye’ll die of
+<ce>            old age before you become high ranked,
+<ce>            %lev. Scram.
+
+AcceptQuest:  [1002]
+<ce>            Get yer sorry hide to _tavern_ where
+<ce>            _prostitute_ hangs around. I guess
+<ce>            %g’ll be able to give ye a name. Find that
+<ce>            wretch and beat him up. I insist on that.
+<ce>            No killin’, ye hear? The bastard’ll be a
+<ce>            reminder for our other customers. Get that done
+<ce>            in =timer_ days and I’ll give ye some gold. 
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>            _dummy_ was the one? That’ll teach %g2
+<ce>            not to mess with the Ma'am's girls. Good work, %lev. 
+
+RumorsDuringQuest:   [1005]
+Someone I know works the streets. She says some of her customers have unusual demands.
+<--->
+I went to _tavern_ yesterday. Poor _prostitute_ had been beaten up, it seems.
+
+RumorsPostFailure:   [1006]
+Poor _prostitute_ hasn’t been seen around __tavern_ in a while. I hope she’s alright.
+
+RumorsPostSuccess:   [1007]
+_dummy_ has been seen limping around town. Some say %g got beaten up by _prostitute_'s employer.
+
+QuestorPostsuccess:  [1008]
+That fool who hit Ma'am's girl got what he bargained for, right %lev? What do ye need?
+
+
+QuestorPostfailure:  [1009]
+After how you failed to beat up that fool, Ma'am %ln's been saying she may sell out to the Wharf Rats. I guess you should be the one to pay up those losses. Anyway, make it quick will ya?
+
+
+Message: 1010
+<ce>                You’re from the guild? That good-for-nothing
+<ce>                _dummy_ beat me up badly when I refused
+<ce>                to do some things %g wanted me to do. Make
+<ce>                sure you hit %g2 where it hurts, if you know what I mean.
+
+Message: 1020
+<ce>                Who in Oblivion are you? _prostitute_?
+<ce>                That whore from _tavern_? Yeah,
+<ce>                I hurt %g2 alright. The wretch said %g’d
+<ce>                do anything I asked %g2 to and %g then refused.
+<ce>                What’s it to ya? I don’t care about your rules.
+<ce>                I was a paying customer, so I was in charge. Let
+<ce>                me prove it to ya, scoundrel!
+
+Message: 1030
+<ce>                Stop, stop! Enough! I promise I won’t do it again.
+<ce>                %oth, is that my teeth? Damn it!
+
+Message: 1040
+%qdt
+_questgiver_ sent me out to teach a lesson
+to one of _prostitute_’s customers who
+hit %g2. I am to meet %g2 at _tavern_
+to learn that fool's name. I have been 
+warned that murder will not be tolerated. I
+have =timer_ days to do this and get back
+to the Thieves Guild in ___questgiver_.
+
+Message: 1050
+<ce>                Dead!? Do we look like assassins, %lev?
+<ce>                %oth! That’ll hurt our deal with the Ma'am! 
+<ce>                Get lost, will ya?
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor male
+Person _prostitute_ faction The_Prostitutes
+Person _dummy_ group Resident1
+--Person _db_ faction The_Dark_Brotherhood
+
+Place _tavern_ local tavern
+Place _dummyres_ local house
+
+Foe _foe1_ is Archer
+Foe _foe2_ is Barbarian
+Foe _foe3_ is Mage
+Foe _foe4_ is Rogue
+
+Clock _timer_ 5.00:00 0 flag 1 range 0 1
+
+--variable _pcdbfriend_
+
+--	Quest start-up:
+	start timer _timer_
+	log 1040 step 0
+    place npc _prostitute_ at _tavern_
+    place npc _dummy_ at _dummyres_
+	dialog link for person _dummy_ 
+	dialog link for location _dummyres_
+
+_prosclicked_ task:
+    clicked npc _prostitute_
+    say 1010
+	add dialog for person _dummy_ 
+    add dialog for location _dummyres_
+
+_custclicked_ task:
+    clicked npc _dummy_
+    pick one of _foe1_ _foe2_ _foe3_ _foe4_
+
+_foe1_ task:
+    hide npc _dummy_
+    say 1020
+    place foe _foe1_ at _dummyres_
+
+ _foe2_ task:
+    hide npc _dummy_
+    say 1020
+    place foe _foe2_ at _dummyres_
+
+_foe3_ task:
+    hide npc _dummy_
+    say 1020
+    place foe _foe3_ at _dummyres_
+
+_foe4_ task:
+    hide npc _dummy_
+    say 1020
+    place foe _foe4_ at _dummyres_
+
+_injfoe1_ task:
+    injured _foe1_ saying 1030
+    restrain foe _foe1_
+
+_injfoe2_ task:
+    injured _foe2_ saying 1030
+    restrain foe _foe2_
+
+ _injfoe3_ task:
+    injured _foe3_ saying 1030
+    restrain foe _foe3_
+
+ _injfoe4_ task:
+    injured _foe4_ saying 1030
+    restrain foe _foe4_
+
+_slainfoe1_ task:
+    killed _foe1_
+
+_slainfoe2_ task:
+    killed _foe2_
+
+_slainfoe3_ task:
+    killed _foe3_
+
+_slainfoe4_ task:
+    killed _foe4_
+
+_beatup_ task:
+    when _injfoe1_ or _injfoe2_ or _injfoe3_ or _injfoe4_ 
+
+_slain_ task:
+    when _slainfoe1_ or _slainfoe2_ or _slainfoe3_ or _slainfoe4_
+
+_resolution_ task:
+    when _slain_ or _beatup_
+
+_clearqgclicked_ task:
+    when _qgclicked_ and not _resolution_
+    clear _qgclicked_ _clearqgclicked_
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_win_ task:
+    when _qgclicked_ and _beatup_ and not _slain_
+    give pc _reward_
+    end quest
+
+_fail_ task:
+    when _qgclicked_ and _slain_
+    say 1050
+    end quest
+
+--_pcdbrepcheck_ task:
+--    repute with _db_ exceeds 1 do _pcdbfriend_
+
+--_dbinvitecheck1_ task:
+--    when _slain_ and not _pcdbfriend_
+--    pick one of _dbinviteyes_ _dbinviteno_ _dbinviteno_ _dbinviteno_ _dbinviteno_
+
+--_dbinviteyes_ task:
+--    start quest JOTGDB
+
+--_dbinviteno_ task:
+ 
+_timer_ task:
+    end quest

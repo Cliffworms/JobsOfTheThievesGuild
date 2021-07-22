@@ -1,0 +1,30 @@
+Quest: JOTGDB
+DisplayName: Dark Brotherhood Initiation Timer
+-- Message panels
+QRC:
+
+
+QuestorOffer:  [1000]
+<ce>------
+
+RefuseQuest:  [1001]
+<ce>-------
+
+AcceptQuest:  [1002]
+<ce>-------
+
+QuestFail:  [1003]
+<ce>-------
+
+QuestComplete:  [1004]
+<ce>-------
+
+QBN:
+Clock _timer_ 12:00
+
+--    Quest start-up:
+    start timer _timer_
+
+_timer_ task:
+    start quest L0A01L00
+    end quest

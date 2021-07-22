@@ -1,0 +1,261 @@
+Quest: JOTG09
+DisplayName: Jewel Smuggling
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            One of Ma'am %ln's girls informed us
+<ce>            a noble is about to move a valuable
+<ce>            stone to a friend. Got some free time
+<ce>            ahead of you to track the noble’s
+<ce>            courier and get the gem?
+<--->
+<ce>            A noble we’ve been spying on for some
+<ce>            time likes to send jewels to a contact
+<ce>            using adventurers as couriers. I want
+<ce>            that gem and I don’t care about the
+<ce>            courier’s fate. You in?
+<--->
+<ce>            Most nobles like us, but there’s one
+<ce>            bastard who doesn’t. We got a tip that
+<ce>            the fool will move a gem for
+<ce>            safekeeping. That stone must not get
+<ce>            to its destination. That interests you?
+
+RefuseQuest:  [1001]
+<ce>            Yeah, I figured you weren’t the hunting
+<ce>            type. Your loss. Those _reward_ gold pieces
+<ce>            will go to someone competent enough.
+
+AcceptQuest:  [1002]
+<ce>            So, we know that _noble_’s about to
+<ce>            send a courier carrying a _gem_, but we don’t
+<ce>            know exactly when. Our spymaster’s on that case.
+<ce>            Your job, for now, is to wait for his letter
+<ce>            detailing the courier’s expected voyage. Once
+<ce>            you receive it, track that courier and grab the
+<ce>            jewel. Normally we condone killing, but we’ve
+<ce>            received the higher ups’ approbation if it's
+<ce>            necessary. Good hunting. 
+<--->
+<ce>            That’s what I like to hear. We don’t know where
+<ce>            _noble_’s courier is at the moment,
+<ce>            so wait for a letter from our spymaster. I suggest
+<ce>            you stay in town until you receive it. Then, track
+<ce>            that bastard down and get me that _gem_. This
+<ce>            time, violence is tolerated if it's self-defense.
+<ce>            Have fun, %lev.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>            Yup, that looks like the _gem_ alright. Good
+<ce>            show snatching it from that adventurer. When
+<ce>            will they ever learn that doing honest
+<ce>            deliveries is not a profitable venture? Here’s
+<ce>            yer pay.
+
+RumorsDuringQuest:   [1005]
+_noble_ is still in the smuggling business, I hear.
+<--->
+There's been an extraordinary increase in smuggling lately.
+
+RumorsPostFailure:   [1006]
+No one knows who the kingpin is behind the _contraband_ smuggling."
+
+RumorsPostSuccess:   [1007]
+I hear _noble_ is mad as hell at some adventurer %g hired as a courier. I guess the package was lost or stolen.
+
+QuestorPostsuccess:  [1008]
+Ah, _noble_’s bane. How may I help you?
+
+QuestorPostfailure:  [1009]
+Remember the _gem_, %lev? The one you didn't snatch from that adventurer? %oth, %pcf, that stone was worth a fortune. Get out of here.
+
+Message: 1010
+%qdt
+I’m on a job from _questgiver_ of the
+Thieves Guild in ___questgiver_ to intercept a
+_gem_ sent from some noble known as _noble_.
+I must wait a few days for the spymaster’s letter
+that will detail the courier’s schedule. Killing
+the courier will be tolerated if it's self-defense.
+
+Message: 1015
+%qdt
+I received the spymaster’s letter. The courier,
+some =dummy_ named _dummy_,
+departs from __depart_'s
+palace and is supposed to arrive in __dest_
+in =timer_ days. __dest_ is a small town,
+so %g should be easy to spot on the streets.
+
+Message: 1020
+<ce>
+%pcf, the courier's some
+=dummy_ adventurer
+called _dummy_.
+<ce>
+My contact at __depart_'s palace says
+%g should make it to some shanty town
+called __dest_ in =timer_ days.
+So get there as soon as you can and
+walk the town's streets. 
+<ce>
+If the fool's delayed, I'll let you know.
+<ce>
+<ce>Good hunting.
+
+Message: 1025
+<ce>        A well-dressed man walks past you, handing
+<ce>        you a piece of paper while casually
+<ce>        continuing his walk.
+<--->
+<ce>        A well-dressed woman walks past you,
+<ce>        handing you a piece of paper while
+<ce>        casually continuing her walk.
+<--->
+<ce>        A child walks past you, handing you a piece
+<ce>        of paper before running away.
+
+Message: 1030
+<ce>        You see a =dummy_ walking __dest_'s
+<ce>        streets in the opposite direction. _dummy_,
+<ce>        oblivious of your presence, walks closer to you.
+<ce>
+<ce>        "The Thieves Guild has word that you are carrying
+<ce>        a gemstone of considerable value. Hand it over
+<ce>        and I'll let you off easy." you say to the courier.
+<ce>
+<ce>        _dummy_’s surprise quickly turns to
+<ce>        terror. The courier fetches %g3 travel bag and
+<ce>        quickly hands you the _gem_.
+<ce>
+<ce>        "Like taking coin from a child. Now, get out of
+<ce>        my sight, you weak-kneed courier.” you tell
+<ce>        _dummy_ who, following your clear
+<ce>        instructions, flees through a nearby alley.
+
+Message: 1040
+<ce>        You see a =dummy_ walking __dest_'s
+<ce>        streets in the opposite direction. _dummy_,
+<ce>        oblivious of your presence, walks closer to you.
+<ce>
+<ce>        "The Thieves Guild has word that you are carrying
+<ce>        a gemstone of considerable value. Hand it over
+<ce>        and I'll let you off easy." you say to the courier.
+<ce>
+<ce>        _dummy_’s surprise is brief as %g
+<ce>        unsheathes %g3 weapon. Defiant, %g
+<ce>        answers back :
+<ce>
+<ce> 
+<ce>        "You want the _gem_, thief? Come and get it, fool!"
+
+Message: 1050
+<ce>        You have not arrived on time in __dest_
+<ce>        to intercept the courier. By now, _dummy_ must
+<ce>        have succesfully completed %g3 delivery.
+
+Message: 1060
+<ce>        You look behind you and notice _dummy_
+<ce>        is no longer there. The adventurer must have
+<ce>        used this opportunity to run to %g3 contact
+<ce>        to deliver the package. Who that contact is,
+<ce>        you will never know.
+
+Message: 1070
+<ce>        _dummy_ collapses before you, now
+<ce>        lifeless. You see a gem falling off %g3 pocket. 
+<ce>        Taking a closer look, it is indeed the _gem_
+<ce>        you've been tasked to retrieve. 
+
+
+QBN:
+Item _reward_ gold
+Item _gem_ gem
+Item _contraband_ drug
+Item _letter_ letter used 1020
+
+Person _questgiver_ group Questor male
+Person _dummy_ group Local_4.0
+Person _noble_ group Local_3.0
+
+Place _depart_ remote palace
+Place _dest_ remote village
+
+Foe _courier1_ is Warrior
+Foe _courier2_ is Mage
+Foe _courier3_ is Bard
+
+
+Clock _spymaster_ 1.00:00 3.00:00
+Clock _timer_ 16.00:00 28.00:00
+Clock _fail_ 24:00
+Clock _desttimer_ 00:05
+
+--	Quest start-up:
+	start timer _spymaster_
+	log 1010 step 0
+
+_spymaster_ task:
+    say 1025
+    get item _letter_
+    start timer _timer_
+    log 1015 step 1
+    pc at _dest_ set _inside_
+
+_inside_ task:
+
+_meetcourier_ task:
+    when _timer_ and _inside_
+    start timer _desttimer_
+
+_desttimer_ task:
+    stop timer _fail_
+    pick one of _flee_ _attack_ _attack_
+
+_flee_ task:
+    say 1030
+    get item _gem_
+
+_attack_ task:
+    say 1040
+    pick one of _foe1_ _foe2_ _foe3_
+
+_foe1_ task:
+    send _courier1_ every 00 minutes 1 times with 100% success
+
+_foe2_ task:
+    send _courier2_ every 00 minutes 1 times with 100% success
+
+_foe3_ task:
+    send _courier3_ every 00 minutes 1 times with 100% success
+
+_pcflees_ task:
+    when _attack_ and not _inside_ and not _slain_
+    remove foe _courier1_
+    remove foe _courier2_
+    remove foe _courier3_
+    say 1060
+    end quest
+
+_slain_ task:
+    killed 1 _courier1_ saying 1070
+    killed 1 _courier2_ saying 1070
+    killed 1 _courier3_ saying 1070
+    get item _gem_
+    stop timer _timer_
+
+_success_ task:
+    toting _gem_ and _questgiver_ clicked
+    give pc _reward_
+    end quest
+
+_timer_ task:
+    start timer _fail_
+
+_fail_ task:
+    say 1050
+    end quest

@@ -1,0 +1,337 @@
+Quest: JOTG01
+DisplayName: Loaned Gold Recovery
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            Ye feeling angry, %lev? 
+<ce>            Would beating up someone help ye? 
+<ce>            Our loanshark reported a client
+<ce>            hasn’t paid his debts in some time.
+                                     <--->
+<ce>            When ye loan gold to somebody, ye
+<ce>            expect that money to come back. 
+<ce>            The first time it doesn’t, ye send
+<ce>            a warning. The second time the gold
+<ce>            does not show up, ye beat up the
+<ce>            fella.
+<ce> 
+<ce>            Do ye agree, %lev? 
+                                     <--->
+<ce>            Got a job for ya, but it’s not a
+<ce>            burglary. I need someone to teach
+<ce>            someone to always pay back the gold
+<ce>            we loan. Got some time?
+
+RefuseQuest:  [1001]
+<ce>            Stealing's more up your alley, I guess?
+<ce>            Fine, I'll give that to someone else.
+
+AcceptQuest:  [1002]
+<ce>            When I saw yer face I knew that’d do
+<ce>            you some good. The fella’s name is
+<ce>            _dummy_ and %g’s a heavy
+<ce>            gambler at our tables in _tavern_.
+<ce>            The fool owes us gold. It’s been a long
+<ce>            time since %g paid up, though.
+<ce>            _dummy_ lives here in __dummyres_.
+<ce>            Remember, only a good beating. No
+<ce>            killing. We ain’t the Dark Brotherhood. 
+<ce>            I want that gold in =timer_ days or less.
+                                     <--->
+<ce>            Great minds think alike, %ra. We
+<ce>            warned _dummy_ the first 
+<ce>            time %g didn’t show up to pay back %g3 loan.
+<ce>            We told that bastard the next time there’d
+<ce>            be a beating, yet I still don’t see no sign
+<ce>            of that gold. _dummy_ met
+<ce>            our loanshark in _tavern_ and also
+<ce>            has a house somewhere in town. Try either of
+<ce>            those and knock %g2 a bit. No killing. That’s
+<ce>            bad for our business. I want to see ye back
+<ce>            in =timer_ days. Have fun.
+                                     <--->
+<ce>            Good. _dummy_ already got a warning
+<ce>            that we’d go rough if we didn’t see our loan
+<ce>            back yesterday. The fool lives here in town
+<ce>            and also likes to hang at _tavern_.
+<ce>            _dummy_ may be in either of those places or
+<ce>            hiding somewhere. Find %g2 and make %g2 cough
+<ce>            a teeth or two. We’ll talk again in =timer_ days.
+
+QuestFail:  [1003]
+
+QuestComplete:  [1004]
+<ce>            Here's your share, %lev.
+
+RumorsDuringQuest:   [1005]
+I heard _dummy_ fell on some hard times lately. A friend says %g’s often at _tavern_, gambling whatever %g has left.
+
+RumorsPostFailure:   [1006]
+Thugs killed _dummy_ for a loan %g took from them. I’m sure the Thieves Guild is behind this!
+
+RumorsPostSuccess:   [1007]
+I don’t know the whole story, but _dummy_ was seen limping around town, badly beaten. Damn fool must have angered somebody.
+
+QuestorPostsuccess:  [1008]
+Remember that fool you beat up to recover our loan? Heh, that convinced other poor schmucks to pay up too.
+
+QuestorPostfailure:  [1009]
+Ye failed to get that debt, remember? That'll cost us, thanks to you.
+
+Message: 1010
+<ce>            What? The Thieves Guild? Oh no! Please, ye must
+<ce>            understand me. I took a loan from yer guild 
+<ce>            because my family and I fell on hard times. I
+<ce>            never should have done that but it’s too late
+<ce>            now. Please, I gots children to feed and a rent
+<ce>            to pay. Please, please! Oh, I know. Just tell
+<ce>            them ye hurt me good. That'll calm them and I'll
+<ce>            pay as soon as I can. Please!
+
+Message: 1011
+<ce>            "Oh, Stendarr bless ye! I will keep that between
+<ce>            us, I promise. Ye just saved me. My love must hear
+<ce>            of this. I shall name my next child after ye!
+<ce>            Maybe not all of your mates are bad people after
+<ce>            all." 
+<ce>
+<ce>            _dummy_ quickly leaves,
+<ce>            a smile printed on %g3 face.
+
+Message: 1012
+<ce>            Ye rogue! Ye have no heart!
+
+Message: 1013
+<ce>            Damn! I hoped my little act would have softened you.
+<ce>            Well, if that’s how you want to play. Hey, %ln!
+<ce>            Time to make yourself useful!
+
+Message: 1020
+<ce>            You the one from your guild? Yeah, I have the gold.
+<ce>            But I’m keepin’ it. Once I’m done with you, I’ll fly
+<ce>            away from this town. Bah, enough talkin’. Time to
+<ce>            see if that weapon I bought is actually good!
+
+Message: 1030
+%qdt:
+_questgiver_ of the Thieves Guild
+in ___questgiver_ has given me a job.
+I am to pay a visit to _dummy_ 
+here in __dummyres_, either at %g3
+home or at the tavern_. The fool hasn’t
+paid back %g3 loan in some time and
+needs convincing. I have to beat up 
+_dummy_ and maybe recover the
+gold, but I must not kill %g2 as that
+may deter future customers. The gold
+must be back in _questgiver_’s hands 
+in =timer_ or less.
+
+Message: 1070
+<ce>            "Enough! Mercy! I…I’ll visit your loanshark tomorrow.
+<ce>            Okay? Argh! I guess I’ll have to rent a cart to get
+<ce>            me there..."
+<ce>
+<ce>            _dummy_ painfully walks out, limping.
+
+Message: 1080
+<ce>            "Enough! Mercy! Here! Take it! Yeah, I had it with me
+<ce>            but I wanted to spend some more on a game of dice. 
+<ce>            Stendarr’s mercy, I can’t feel my arm. Tell your
+<ce>            mates I’m cleared, okay? Ouch!"
+<ce>
+<ce>            _dummy_ hands you a sack of gold and
+<ce>            painfully walks out, limping.
+
+Message: 1090
+<ce>            _questgiver_ will not be happy to hear the
+<ce>            news of _dummy_'s demise.
+
+Message: 1110
+<ce>            No gold then, but _dummy_ got a broken
+<ce>            rib or three? I’m sure %g will find a way to pay us
+<ce>            back now. Good work, %lev. 
+
+Message: 1111
+<ce>            What do you mean _dummy_'s dead? I told
+<ce>            ye to break a jaw, a leg or any other body part to
+<ce>            teach %g2 a lesson. We’ll never see our gold back.
+<ce>            Damn it! Scram, %lev.
+
+Message: 1112
+<ce>            What do you mean _dummy_'s dead? I told
+<ce>            ye to break a jaw, a leg or any other body part to
+<ce>            teach %g2 a lesson. Sure, you got the gold, but
+<ce>            that'll deter future customers. Damn it! Scram,
+<ce>            %lev.
+
+Message: 1113
+<ce>            Is that the sound of coins jinglin’ in that sack,
+<ce>            %lev? Aye, it is! So that fetcher did have the
+<ce>            gold afterall. A broken bone or two will teach our
+<ce>            other clients to always pay their debts in time. 
+
+QBN:
+Item _reward_ gold
+Item _debt_ small_sack
+
+Person _questgiver_ group Questor
+Person _dummy_ group Local_3.1
+--Person _db_ faction The_Dark_Brotherhood
+
+Place _tavern_ local tavern
+Place _dummyres_ local house
+
+Foe _bodyguard_ is Barbarian
+Foe _dummyfight_ is Acrobat
+
+Clock _timer_ 3.00:00 0 flag 1 range 0 1
+
+--variable _pcdbfriend_
+
+
+--    Quest start-up:
+    start timer _timer_
+    log 1030 step 0
+    pick one of _dummyatres_ _dummyatinn_
+
+_dummyatres_ task:
+    place npc _dummy_ at _dummyres_
+
+_dummyatinn_ task:
+    place npc _dummy_ at _tavern_
+
+_dummyclicked_ task:
+    clicked npc _dummy_
+
+_dummychooseres_ task:
+    when _dummyclicked_ and _dummyatres_
+    pick one of _begres_ _fightres_
+
+_dummychooseinn_ task:
+    when _dummyclicked_ and _dummyatinn_
+    pick one of _beginn_ _fightinn_    
+
+_begres_ task:
+    when _dummyclicked_ and _begres_
+    prompt 1010 yes _acceptbeg_ no _refusebegres_
+
+_fightres_ task:
+    when _dummyclicked_ and _fightres_
+    say 1020
+    hide npc _dummy_
+    place foe _dummyfight_ at _dummyres_   
+
+_hiredhelpres_ task:
+    say 1013
+    hide npc _dummy_
+    place foe _dummyfight_ at _dummyres_
+    create foe _bodyguard_ every 0 minutes 1 times with 100% success
+
+_fight2res_ task:
+    say 1012
+    hide npc _dummy_
+    place foe _dummyfight_ at _dummyres_
+
+_beginn_ task:
+    when _dummyclicked_ and _beginn_
+    prompt 1010 yes _acceptbeg_ no _refusebeginn_
+
+_fightinn_ task:
+    when _dummyclicked_ and _fightinn_
+    say 1020
+    hide npc _dummy_
+    place foe _dummyfight_ at _tavern_   
+
+_refusebeginn_ task:
+    pick one of _hiredhelpinn_ _fight2inn_
+
+_hiredhelpinn_ task:
+    say 1013
+    hide npc _dummy_
+    place foe _dummyfight_ at _tavern_
+    create foe _bodyguard_ every 0 minutes 1 times with 100% success
+
+_fight2inn_ task:
+    say 1012
+    hide npc _dummy_
+    place foe _dummyfight_ at _tavern_    
+
+_acceptbeg_ task:
+    say 1011
+    hide npc _dummy_
+
+_refusebegres_ task:
+    pick one of _hiredhelpres_ _fight2res_
+
+_beatenup_ task:
+    injured _dummyfight_
+    pick one of _hasgold_ _nogold_
+
+_nogold_ task:
+    say 1070
+    remove foe _dummyfight_
+    remove foe _bodyguard_
+
+_hasgold_ task:
+    say 1080
+    get item _debt_
+    remove foe _dummyfight_
+    remove foe _bodyguard_   
+
+_slain_ task:
+    killed 1 _dummyfight_ saying 1090
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_questfailed_ task:
+    when _qgclicked_ and _slain_ and not _hasgold_
+    say 1111
+    end quest
+
+ _questfailedgold_ task:
+    when _qgclicked_ and _hasgold_ and _slain_
+    say 1112
+    end quest   
+
+_qgclickedpcpays_ task:
+    when _qgclicked_ and _acceptbeg_ and not _slain_
+    say 1110
+    give pc _reward_
+    end quest
+
+_qgclickednpcpays_ task:
+    when _qgclicked_ and _hasgold_ and not _slain_
+    say 1113
+    give pc _reward_
+    end quest
+
+_qgclickednogold_ task:
+    when _qgclicked_ and _nogold_ and not _slain_
+    say 1110
+    give pc _reward_
+    end quest
+
+_resolution_ task:
+    when _slain_ or _hasgold_ or _acceptbeg_ or _nogold_
+
+--_pcdbrepcheck_ task:
+--    repute with _db_ exceeds 1 do _pcdbfriend_
+
+--_dbinvitecheck1_ task:
+--    when _slain_ and not _pcdbfriend_
+--    pick one of _dbinviteyes_ _dbinviteno_ _dbinviteno_ _dbinviteno_ _dbinviteno_
+
+--_dbinviteyes_ task:
+--    start quest JOTGDB
+
+--_dbinviteno_ task:
+
+_timer_ task:
+    end quest
+
+_clearclick_ task:
+    when _qgclicked_ and not _resolution_
+    clear _qgclicked_ _clearclick_      

@@ -1,0 +1,771 @@
+Quest: JOTG10
+DisplayName: Hostage Exchange
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            I have a delicate job for you, %lev.
+<ce>            The Wharf Rats captured one of ours and want
+<ce>            one of theirs in exchange. It may be a ruse,
+<ce>            but time’s not on our side to see if there’s
+<ce>            truth in there. Care to assist?
+<--->
+<ce>            We got a good catch yesterday, %pcf.
+<ce>            Yeah, one of our own returned from a job with
+<ce>            a Wharf Rat knocked unconscious. Those
+<ce>            dung-eating brainless fools want their rat back,
+<ce>            so they’ve organized an hostage exchange. I
+<ce>            wouldn’t be surprised if it’s an ambush. Got
+<ce>            some time to help us?
+<--->
+<ce>            We got a letter from the Wharf Rats saying they
+<ce>            want a truce. They say they’re ready to see to
+<ce>            it by exchanging our imprisoned members with
+<ce>            theirs. I have a group ready, but I’m looking
+<ce>            for someone else to lend a hand if things go
+<ce>            south. Are you available?
+
+RefuseQuest:  [1001]
+<ce>            Are you serious, %lev? I ask you to
+<ce>            help a guildmate in need and you refuse?
+<ce>            If you get captured by the Wharf Rats, don’t
+<ce>            expect me to send someone to rescue you.
+
+AcceptQuest:  [1002]
+<ce>            _tg1_, _tg2_, get in here and bring
+<ce>            that damn rat with ye. %pcf will assist you. Right,
+<ce>            you three. The meeting will take place in
+<ce>            __location_ at midnight. _tg1_, you’ll be doing
+<ce>            the talking and the negotiating. _tg2_,
+<ce>            %pcf, you’ll keep the hostage in line and attack at
+<ce>            the first sign that it’s a trap. Slit our prisoner’s
+<ce>            throat if it comes to that. They said they’d wait
+<ce>            =timer_ days before killing our imprisoned guildmate,
+<ce>            so you three better make it fast. Be careful.
+<ce>            Shadow hide you.
+<--->
+<ce>            Good, seems like your two mates have just arrived
+<ce>            with our prisoner. _tg1_ will meet with
+<ce>            the Rats while _tg2_ and you will be
+<ce>            the muscle. If it appears to be a trap, I want
+<ce>            you to kill our prisoner before jumping into the
+<ce>            action and killing them all. The meeting’s taking
+<ce>            place in some piss-poor home called __location_
+<ce>            at midnight. The Rats will be waiting =timer_ days,
+<ce>            so you better get moving. I want to see you all with
+<ce>            our imprisoned guildmate in one piece. Be careful.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>            Here's your gold, %pcf. Now go. I need to write
+<ce>            a letter to the Crow.
+
+RumorsDuringQuest:   [1005]
+Street thugs have been fighting each other again. What's the %rt waiting for to put a stop to this bloodshed?
+<--->
+When will this conflict between the Thieves Guild and the Wharf Rats end?
+<--->
+The guards found a couple of bodies stashed inside a house. They suspect either the Thieves Guild or the Wharf Rats are responsible.
+
+RumorsPostFailure:   [1006]
+Another bloody fight erupted between street gangs yesterday. The %rt has vowed to stop this.
+<--->
+The conflict between the Wharf Rats and the Thieves Guild will never end, it seems.
+<--->
+A man was killed in broad daylight, did you hear? Two thugs jumped him and gutted him before running away.
+
+RumorsPostSuccess:   [1007]
+A city guard told me the Thieves Guild and the Wharf Rats may have signed a truce.
+<--->
+There's been less violence between street thugs of late.
+<--->
+The Thieves Guild and the Wharf Rats agreed on a truce. I hear the %rt is concerned by that.
+
+QuestorPostsuccess:  [1008]
+The Wharf Rats have been calm since that prisoner exchange, thanks to ye and yer two guildmates. What do ye need?
+
+QuestorPostfailure:  [1009]
+%oth, it's you. What in Oblivion de ye want? I'm busy organizing a retaliation on the damn Rats.
+
+Message: 1010
+%qdt
+Two guildmates and I are escorting a Wharf Rat
+captive from the Thieves Guild in
+___questgiver_ to __location_
+to proceed to a prisoner exchange. We are to
+meet the Wharf Rats at midnight. If it's a trap,
+I've been told to execute our prisoner before
+jumping in the battle. They mentioned they'd wait
+=timer_ days before executing their hostage.
+
+Message: 1020
+<ce>            "Lead the way to __location_, %pcf."
+<ce>            says _tg1_ as %g joins you, pushing
+<ce>            the beaten-up Wharf Rat captive ahead of %g3. 
+
+Message: 1030
+<ce>            _tg1_ raises %g3 hand to stop the group.
+<ce>
+<ce>            “That’s the place. We’re going to wait until midnight.
+<ce>            I guess they’re hidden nearby. Keep your eyes opened
+<ce>            until then.” %g says.
+
+Message: 1035
+<ce>            _tg1_ raises %g3 hand to get the group’s attention.
+<ce>
+<ce>            “Right, the Wharf Rats are there ahead of us. %pcf,
+<ce>            you’re in charge of the hostage. If it’s an ambush, you slit
+<ce>            the Rat’s throat. _tg2_, you keep an eye on their
+<ce>            hands. If something’s off, you let us know. Let’s go.”
+
+Message: 1040
+<ce>            The three figures closing on your group are members
+<ce>            of the Wharf Rats, no doubt about it. The general
+<ce>            dirtiness and rancid breath immediately tip you off.
+<ce>            One of them holds a prisoner with a bag on his head.
+<ce>            The tension is palpable.
+<ce>
+<ce>            “We’ll make this quick. One of yours for one of ours.
+<ce>            As was agreed.” says _tg1_.
+<ce>
+<ce>            “Yeah. We release them at the same time. Go.” replies
+<ce>            who appears to be the leader of the Wharf Rats’ group.
+<ce>
+<ce>            _tg1_ nods your way. You push your prisoner’s
+<ce>            forward as the Wharf Rats do the same.
+
+Message: 1045
+<ce>            Three agents of the Wharf Rats, accompanied by who
+<ce>            must be their prisoner, stand before you. The
+<ce>            tension is palpable.
+<ce>
+<ce>            “We’ll make this quick. One of yours for one of ours.
+<ce>            As was agreed.” says _tg1_.
+<ce>
+<ce>            “Yeah. We release them at the same time. Go.” replies
+<ce>            who appears to be the leader of the Wharf Rats’ group.
+<ce>
+<ce>            _tg1_ nods your way. You push your prisoner’s
+<ce>            forward as the Wharf Rats do the same.
+
+Message: 1046
+<ce>            Both prisoners are greeted by their respective comrades.
+<ce>            The Wharf Rats depart %di. 
+<ce>
+<ce>            "That's it? No trap?" says _tg2_.
+<ce>
+<ce>            “That went surprisingly well. Good to see you alive and well,
+<ce>            _tg3_. Let’s make it back to __questgiver_.”
+<ce>            says _tg1_.
+
+Message: 1050
+<ce>            “Their prisoner’s got a knife!” screams _tg2_.
+<ce>            Immediately, everyone draws their weapons.
+<ce>
+<ce>            Do you slash your prisoner’s throat before
+<ce>            joining the battle?
+
+Message: 1051
+<ce>            The prisoner falls to the ground, the wound's pouring blood.
+<ce>            The Wharf Rats’ prisoner removes the bag covering her head,
+<ce>            revealing that it was indeed a ruse. 
+<ce>
+<ce>            The battle is joined.
+<ce>
+<ce>            Note : Your guildmates are a Thief and a Rogue.
+<ce>            The Wharf Rats are composed of a Barbarian, an Archer and
+<ce>            a Warrior.
+
+Message: 1052
+<ce>            Seeing you're hesitating, the prisoner runs away from the fight.
+<ce>            The Wharf Rats’ captive removes the bag covering her head,
+<ce>            revealing that it indeed was a ruse. 
+<ce>
+<ce>            The battle is joined
+<ce>
+<ce>            Note : Your guildmates are a Thief and a Rogue.
+<ce>            The Wharf Rats are composed of a Barbarian, an Archer and
+<ce>            a Warrior.
+
+Message: 1055
+<ce>            You accompany your captive guildmate and remove the bag on her
+<ce>            head. The prisoner stares
+<ce>            at you with a grin. Immediately, the Wharf Rats draw their weapons.
+<ce>
+<ce>            It was a ruse!
+<ce>
+<ce>            “Kill ‘em all!” screams the Wharf Rats leader.
+<ce>
+<ce>            Note : Your guildmates are a Thief and a Rogue.
+<ce>            The Wharf Rats are composed of a Barbarian, an Archer and two
+<ce>            Warriors.
+
+Message: 1060
+<ce>            The battle ends as the last Wharf Rat collapses, lifeless.
+<ce>
+<ce>            “%oth. The damn Rats have no decency. Our victory’ll
+<ce>            send a message to their higher ups, I’m sure.”
+<ce>            says _tg1_.
+<ce>
+<ce>            “Yeah. I admit I’m surprised we’re all alive. Let’s go back
+<ce>            to _questgiver_. He’ll want to hear of this.”
+<ce>            repies _tg2_.
+
+Message: 1061
+<ce>            The battle ends as the last Wharf Rat collapses, lifeless.
+<ce>
+<ce>            “By the Shadow! You okay, %pcf? Those bastards got
+<ce>            _tg2_, but at least they’re all dead.
+<ce>            Clever trap, I admit. Come, let’s report back to
+<ce>            _questgiver_.” says _tg1_ as %g grabs an object
+<ce>            belonging to _tg2_
+
+Message: 1062
+<ce>            The battle ends as the last Wharf Rat collapses, lifeless.
+<ce>
+<ce>            “Those bastards! The guild’s retribution on the Rats will be
+<ce>            hard. They’re gonna pay. ‘tis a shame that _tg1_
+<ce>            got killed. Come on, %pcf. We must report to
+<ce>            the guildmaster. Let’s go.” says _tg2_.
+
+Message: 1063
+<ce>            The battle ends as the last Wharf Rat collapses, lifeless.
+<ce>
+<ce>            Around you lie the two bloody bodies of your comrades,
+<ce>            victims of the Wharf Rats’ surprise attack. The
+<ce>            guildmaster will want to learn of this outcome. 
+
+Message: 1064
+<ce>            You hear screams behind you as the Wharf Rats finish off
+<ce>            your comrades.
+<ce>
+<ce>            “Run! Run little guildie! Tell your precious Crow there’s
+<ce>            going to be more death before the end!” yells a Wharf Rat.
+
+Message: 1080
+<ce>            "Guildmaster, we're here to report on the hostage exchange."
+<ce>            says _tg1_.
+<ce>
+<ce>            "Where's our guildmate?" replies _questgiver_.
+<ce>
+<ce>            "It was a ruse. The prisoner they held was a Wharf Rat in
+<ce>            disguise. But that doesn't matter. They're all dead now,
+<ce>            including our captive. %pcf saw to that."
+<ce>
+<ce>            "So they weren’t serious about a truce. Good job killing
+<ce>            them all and swiftly executing that bastard. That’ll send
+<ce>            a message to whoever their leader is. That was a bloody
+<ce>            good job, you three. Damn good. You'll each have _reward2_ gold
+<ce>            in addition to the standard guild fee."
+<ce>
+<ce>            "Hey, %pcf. Nice having worked with ya. See you around, aye?"
+<ce>            _tg2_ tells you before sitting down to relax.
+<ce>
+<ce>            "I agree with %g2. Stay safe, %lev." replies _tg1_.
+
+Message: 1081
+<ce>            "Boss, that exchange was a damn setup." says _tg2_.
+<ce>
+<ce>            "Where's our guildmate? And _tg1_?"
+<ce>            replies _questgiver_.
+<ce>
+<ce>            "Dead. 'twas an ambush. Their captive was another damn Rat.
+<ce>            _tg1_ got killed in the fight. But the Rats are
+<ce>            all feast for the crows now, including our prisoner.
+<ce>            %pcf slit his throat."
+<ce>
+<ce>            "%oth! Those sons-of-whores. Damn shame for
+<ce>            our own, but hey at least you both avenged our dead
+<ce>            by gutting them all, and the prisoner too. That’ll send a
+<ce>            message to whoever their leader is. You both deserve a
+<ce>            better reward. Here, take that _reward2_ gold, plus your
+<ce>            fee for this job."
+<ce>
+<ce>            "I'll go get myself a drink in honor of _tg1_.
+<ce>            Nice having worked with ya. See you around, %pcf."
+<ce>            _tg2_ says as %g turns to you.
+
+Message: 1082
+<ce>            "Guildmaster, we're here to report on the hostage exchange."
+<ce>            says _tg1_.
+<ce>
+<ce>            "Where's our guildmate? And what of _tg2_?"
+<ce>            replies _questgiver_.
+<ce>
+<ce>            "Fallen, I'm afraid. It was a ruse, you see. The prisoner
+<ce>            they held was a Wharf Rat in disguise. _tg2_
+<ce>            fought bravely before %g3 death. All the Rats are dead,
+<ce>            thanks to %g3 efforts. %pcf also executed our captive."
+<ce>
+<ce>            "%oth! Those sons-of-whores. Damn shame for our own,
+<ce>            but hey at least you both avenged our dead by gutting them
+<ce>            all, and the prisoner too. That’ll send a message to
+<ce>            whoever their leader is. You both deserve a better reward.
+<ce>            Here, take that _reward2_ gold, plus your fee for this job."
+<ce>
+<ce>            "I'll bring _tg2_'s memento to %g3 partner.
+<ce>            Stay safe, %lev." says _tg1_.
+
+Message: 1083
+<ce>            "Guildmaster, we're here to report on the hostage exchange."
+<ce>            says _tg1_.
+<ce>
+<ce>            "Where's our guildmate?" replies _questgiver_.
+<ce>
+<ce>            "It was a ruse. The prisoner they held was a Wharf Rat in
+<ce>            disguise. But that doesn't matter. They're all dead now.
+<ce>            Except for our captive. %pcf hesitated and the Rat took
+<ce>            the opportunity to flee."
+<ce>
+<ce>            "So they weren’t serious about a truce. Good job killing
+<ce>            them all. It’s a shame you didn’t get to execute our captive,
+<ce>            though. Anyway, I guess he'll run to his leader and say we
+<ce>            are not to be trifled with. Here’s yer gold."
+<ce>
+<ce>            "Damn it, %pcf. I'm sure if ye'd have killed the
+<ce>            prisoner we'd have got a bonus or something. Anyway, see
+<ce>            you around." _tg2_ tells you before sitting
+<ce>            down to relax.
+<ce>
+<ce>            "No matter, _tg2_. He'll tell the Wharf Rats how
+<ce>            we decimated them. It may help us in the end. Stay safe,
+<ce>            %lev." replies _tg1_.
+
+Message: 1084
+<ce>            "Boss, that exchange was a damn setup." says _tg2_.
+<ce>
+<ce>            "Where's our guildmate? And _tg1_?"
+<ce>            replies _questgiver_.
+<ce>
+<ce>            "Dead. 'twas an ambush. Their captive was another damn Rat.
+<ce>            _tg1_ got killed in the fight. But the Rats are
+<ce>            all feast for the crows now. Well, except for our prisoner.
+<ce>            %pcf let him go."
+<ce>
+<ce>            "%oth! Those sons-of-whores. Damn shame for our
+<ce>            own, but hey at least you both avenged our dead by gutting
+<ce>            them all. %pcf, normally I'd be furious that you didn't listen
+<ce>            to my orders, but since the rest of the Rats are dead, our
+<ce>            captive may share a terrifying tale about us to his leader.
+<ce>            Anyway, here’s yer gold, both of you."
+<ce>
+<ce>            "Damn it, %pcf. I'm sure if ye'd have killed the prisoner
+<ce>            we'd have got a bonus or something. Anyway, see you around.
+<ce>            I'll go drink in _tg1_'s memory." _tg2_
+<ce>            tells you as %g leaves the guild hall.
+
+Message: 1085
+<ce>            "Guildmaster, we're here to report on the hostage exchange."
+<ce>            says _tg1_.
+<ce>
+<ce>            "Where's our guildmate? And what of _tg2_?"
+<ce>            replies _questgiver_.
+<ce>
+<ce>            "Fallen, I'm afraid. It was a ruse, you see. The prisoner
+<ce>            they held was a Wharf Rat in disguise. _tg2_
+<ce>            fought bravely before %g3 death. All the Rats are dead
+<ce>            except for one. %pcf did not execute our captive."
+<ce>
+<ce>            "%oth! Those sons-of-whores. Damn shame for our
+<ce>            own, but hey at least you both avenged our dead by gutting
+<ce>            them all. %pcf, normally I'd be furious that you
+<ce>            didn't listen to my orders, but since the rest of the Rats
+<ce>            are dead, our captive may share a terrifying tale about us
+<ce>            to his leader. Anyway, here’s yer gold, both of you."
+<ce>
+<ce>            "I'll bring _tg2_'s memento to %g3 partner.
+<ce>            Stay safe, %lev." says _tg1_.
+
+Message: 1086
+<ce>            "Guildmaster, we're here to report on the hostage exchange."
+<ce>            says _tg1_.
+<ce>
+<ce>            "Where's our guildmate?" replies _questgiver_.
+<ce>
+<ce>            "It was a ruse. The prisoner they held was a Wharf Rat
+<ce>            in disguise. We noticed only when the exchange was completed.
+<ce>            Our prisoner escaped when the battle broke out."
+<ce>
+<ce>            "So they weren’t serious about a truce. Good job killing
+<ce>            them all. Don't fret about the one who got away. That’ll send
+<ce>            a message to whoever their  leader is. That was a bloody good
+<ce>            job, you three. Damn good. You'll each have _reward2_ gold in
+<ce>            addition to the standard guild fee."
+<ce>
+<ce>            "Hey, %pcf. Nice having worked with ya. See you around, aye?"
+<ce>            _tg2_ tells you before sitting down to relax.
+<ce>
+<ce>            "I agree with %g2. Stay safe, %lev."
+<ce>            replies _tg1_.
+
+Message: 1087
+<ce>            "Boss, that exchange was a damn setup." says _tg2_.
+<ce>
+<ce>            "Where's our guildmate? And _tg1_?"
+<ce>            replies _questgiver_.
+<ce>
+<ce>            "Dead. 'twas an ambush. Their captive was another damn Rat.
+<ce>            _tg1_ got killed in the fight. But the Rats are
+<ce>            all feast for the crows now. Well, except for our prisoner.
+<ce>            He was already on their side when we were ambushed. And he
+<ce>            got away."
+<ce>
+<ce>            "%oth! Those sons-of-whores. Damn shame for our
+<ce>            own, but hey at least you both avenged our dead by gutting
+<ce>            them all. Don't fret about the one who fled. That’ll send a
+<ce>            message to whoever their leader is. That was a bloody good
+<ce>            job, you two. You both deserve a better reward. Here, take
+<ce>            that _reward2_ gold, plus your fee for this job."
+<ce>
+<ce>            "I'll go get myself a drink in honor of _tg1_.
+<ce>            Nice having worked with ya. See you around, %pcf."
+<ce>            _tg2_ says as %g turns to you.
+
+Message: 1088
+<ce>            "Guildmaster, we're here to report on the hostage exchange."
+<ce>            says _tg1_.
+<ce>
+<ce>            "Where's our guildmate? And what of _tg2_?"
+<ce>            replies _questgiver_.
+<ce>
+<ce>            "Fallen, I'm afraid. It was a ruse, you see. The prisoner
+<ce>            they held was a Wharf Rat in disguise and we only noticed
+<ce>            when the exchange was completed. _tg2_ fought
+<ce>            bravely before %g3 death. All the Rats are dead, thanks to
+<ce>            %g3 efforts, yet our prisoner escaped the battle."
+<ce>
+<ce>            "%oth! Those sons-of-whores. Damn shame for our own,
+<ce>            but hey at least you both avenged our dead by gutting them
+<ce>            all. Don't fret about the one who fled. That’ll send a
+<ce>            message to whoever their leader is. That was a bloody good
+<ce>            job, you two. You both deserve a better reward. Here, take
+<ce>            that _reward2_ gold, plus your fee for this job."
+<ce>
+<ce>            "I'll bring _tg2_'s memento to %g3 partner.
+<ce>            Stay safe, %lev." says _tg1_.
+
+Message: 1089
+<ce>            Damn ambushing sons-of-whores! You’re the only alive to tell
+<ce>            the tale. Damn shame for our guildmates. Their names won’t
+<ce>            be forgotten. We’ll make the Rats pay, I tell you. Still, you
+<ce>            did a heck of a good job avenging your guildmates by slaying
+<ce>            every last Rat of the group. For that, you have earned a bonus.
+<ce>            So take this _reward2_ gold in addition to your standard pay.
+
+Message: 1090
+<ce>            Damn sons-of-whores! So those Wharf Rats scum ambushed you
+<ce>            and you are the only one alive to tell the tale. Damn shame
+<ce>            for our guildmates. Their names won’t be forgotten. We’ll
+<ce>            make the Rats pay, I tell you. You did good, running back
+<ce>            to inform us what happened.
+
+Message: 1091
+<ce>            _tg3_! Good to see you back. I admit I'm surprised.
+<ce>            I was expecting a trap from the Rats. It seems like
+<ce>            they were serious after all. Well, good job all of
+<ce>            you. We may have a truce soon with those Rats. I'll
+<ce>            report the turn of events to the Crow.
+
+Message: 1100
+<ce>            "Alright %pcf. That's enough. Come, _tg2_,
+<ce>            let's go to __location_. We're both going
+<ce>            to take care of this. %pcf, the guildmaster will
+<ce>            learn about this." says _tg1_, before
+<ce>            departing %di with _tg2_ and their captive.
+
+QBN:
+Item _reward1_ gold
+Item _reward2_ gold
+
+Person _questgiver_ group Questor male
+Person _tg1_ faction The_Thieves_Guild
+Person _tg2_ faction The_Thieves_Guild
+Person _tg3_ faction The_Thieves_Guild
+Person _captive_ group Local_4.0 male
+
+Place _location_ remote poorhome
+
+Foe _guild01_ is Rogue
+Foe _guild02_ is Thief
+Foe _guild03_ is Burglar
+Foe _rat01_ is Archer
+Foe _rat02_ is Barbarian
+Foe _rat03_ is Warrior
+
+Clock _timer_ 21.00:00 35.00:00
+Clock _flee_ 00:05
+
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    add _tg1_ face saying 1020
+    add _tg2_ face
+    add _captive_ face
+    pc at _location_ set _inside_
+    change foe _guild01_ infighting true
+    change foe _guild02_ infighting true
+    change foe _guild03_ infighting true
+    change foe _guild01_ team 1
+    change foe _guild02_ team 1
+    change foe _guild03_ team 1
+    change foe _rat01_ infighting true
+    change foe _rat02_ infighting true
+    change foe _rat03_ infighting true
+    change foe _rat01_ team 0
+    change foe _rat02_ team 0
+    change foe _rat03_ team 0
+
+_inside_ task:
+
+_time_ task:
+    daily from 00:00 to 05:59
+
+_arriveday_ task:
+    when _inside_ and not _time_
+    say 1030
+
+_arrivenight_ task:
+    when _inside_ and _time_
+    pick one of _ambush_ _exchange1_
+    say 1035
+
+-- Ambush scenario
+
+_ambush_ task:
+    say 1040
+    pick one of _ambushyes_ _ambushno_
+
+_ambushyes_ task:
+    prompt 1050 yes _executeyes_ no _executeno_
+
+_ambushno_ task:
+    say 1055
+    drop _tg1_ face
+    drop _tg2_ face
+    drop _captive_ face
+    create foe _guild01_ every 00 minutes 1 times with 100% success
+    create foe _guild02_ every 00 minutes 1 times with 100% success
+    create foe _rat01_ every 00 minutes 1 times with 100% success
+    create foe _rat02_ every 00 minutes 1 times with 100% success
+    create foe _rat03_ every 00 minutes 1 times with 100% success
+
+_executeyes_ task:
+    say 1051
+    drop _tg1_ face
+    drop _tg2_ face
+    drop _captive_ face
+    create foe _guild01_ every 00 minutes 1 times with 100% success
+    create foe _guild02_ every 00 minutes 1 times with 100% success
+    create foe _rat01_ every 00 minutes 1 times with 100% success
+    create foe _rat02_ every 00 minutes 1 times with 100% success
+    create foe _rat03_ every 00 minutes 1 times with 100% success
+
+_executeno_ task:
+    say 1052
+    drop _tg1_ face
+    drop _tg2_ face
+    drop _captive_ face
+    create foe _guild01_ every 00 minutes 1 times with 100% success
+    create foe _guild02_ every 00 minutes 1 times with 100% success
+    create foe _rat01_ every 00 minutes 1 times with 100% success
+    create foe _rat02_ every 00 minutes 1 times with 100% success
+    create foe _rat03_ every 00 minutes 1 times with 100% success    
+
+_slaintg1_ task:
+    killed _guild01_
+
+_slaintg2_ task:
+    killed _guild02_
+
+_slainrat01_ task:
+    killed _rat01_
+
+_slainrat02_ task:
+    killed _rat02_
+
+_slainrat03_ task:
+    killed _rat03_
+
+_slainrats_ task:
+    when _slainrat01_ and _slainrat02_ and _slainrat03_
+
+_victory1_ task:
+-- Rats slained. Guildmates alive.
+    when _slainrats_ and not _slaintg1_ and not _slaintg2_
+    say 1060
+    remove foe _guild01_
+    remove foe _guild02_
+    add _tg1_ face
+    add _tg2_ face
+    stop timer _flee_
+    stop timer _timer_
+
+_victory2_ task:
+--Rats slained. _tg1_ dead.
+    when _slainrats_ and _slaintg1_ and not _slaintg2_
+    say 1062
+    remove foe _guild02_
+    add _tg2_ face
+    stop timer _flee_
+    stop timer _timer_
+
+_victory3_ task:
+--Rats slained. _tg2_ dead.
+    when _slainrats_ and _slaintg2_ and not _slaintg1_
+    say 1061
+    remove foe _guild01_
+    add _tg1_ face
+    stop timer _flee_
+    stop timer _timer_
+
+_victory4_ task:
+--Rats slained. Both guildmates dead.
+    when _slainrats_ and _slaintg1_ and _slaintg2_
+    say 1063
+    stop timer _flee_
+    stop timer _timer_
+
+_fleesetup_ task:
+    when _ambush_ and not _inside_ and not _slainrats_
+    start timer _flee_
+    stop timer _timer_
+
+_flee_ task:
+--Rats alive. PC fled the area.
+    say 1064
+    kill foe _guild01_
+    kill foe _guild02_
+    remove foe _rat01_
+    remove foe _rat02_
+    remove foe _rat03_
+    stop timer _timer_
+
+-- Exchange scenario
+
+_exchange1_ task:
+    say 1045
+    drop _captive_ face    
+
+_exchange2_ task:
+    when _exchange1_
+    say 1046
+    add _tg3_ face
+    stop timer _timer_
+
+-- Success/Failure tasks
+
+_success_ task:
+    when _victory1_ or _victory2_ or _victory3_ or _victory4_ or _flee_ or _exchange2_
+
+_success1_ task:
+-- Ambush. Two guildmates alive. Prisoner executed TESTED
+    when _victory1_ and _qgclicked_ and _ambushyes_ and _executeyes_
+    say 1080
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+    
+_success2_ task:
+--Ambush. _tg1_ dead. Prisoner executed TESTED
+    when _victory2_ and _qgclicked_ and _ambushyes_ and _executeyes_
+    say 1081
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+
+_success3_ task:
+--Ambush. _tg2_ dead. Prisoner executed TESTED
+    when _victory3_ and _qgclicked_ and _ambushyes_ and _executeyes_
+    say 1082
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+
+_success4_ task:
+-- Ambush. Two guildmates alive. Prisoner released TESTED
+    when _victory1_ and _qgclicked_ and _ambushyes_ and _executeno_
+    say 1083
+    give pc _reward1_
+    end quest
+
+_success5_ task:
+--Ambush. _tg1_ dead. Prisoner released TESTED
+    when _victory2_ and _qgclicked_ and _ambushyes_ and _executeno_
+    say 1084
+    change repute with _questgiver_ by +1
+    give pc _reward1_
+    end quest
+
+_success6_ task:
+--Ambush. _tg2_ dead. Prisoner released TESTED
+    when _victory3_ and _qgclicked_ and _ambushyes_ and _executeno_
+    say 1085
+    change repute with _questgiver_ by +1
+    give pc _reward1_
+    end quest
+
+_success7_ task:
+-- Ambush. Two guildmates alive. Prisoner fled TESTED
+    when _victory1_ and _qgclicked_ and _ambushno_
+    say 1086
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+
+_success8_ task:
+--Ambush. _tg1_ dead. Prisoner fled TESTED
+    when _victory2_ and _qgclicked_ and _ambushno_
+    say 1087
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+
+_success9_ task:
+--Ambush. _tg2_ dead. Prisoner fled TESTED
+    when _victory3_ and _qgclicked_ and _ambushno_
+    say 1088
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+
+_success10_ task:
+--Ambush. Rats dead. Both guildmates dead. TESTED
+    when _victory4_ and _qgclicked_
+    say 1089
+    change repute with _questgiver_ by +2
+    get item _reward2_
+    give pc _reward1_
+    end quest
+
+_success11_ task:
+-- Safe exchange. Thief is back.
+    when _exchange2_ and _qgclicked_
+    say 1091
+    give pc _reward1_
+    end quest
+
+_failure1_ task:
+-- Ambush. Rats alive. PC fled the ambush TESTED
+    when _flee_ and _qgclicked_
+    say 1090
+    give pc _reward1_
+    end quest
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+ 
+ _clearclick_ task:
+    when _qgclicked_ and not _success_
+    clear _qgclicked_ _clearclick_    
+
+_timer_ task:
+    end quest saying 1100

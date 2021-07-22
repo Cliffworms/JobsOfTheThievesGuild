@@ -1,0 +1,406 @@
+Quest: JOTG07
+DisplayName: Taking Care of Business
+-- Message panels
+QRC:
+
+-- 4 scenarios are choosen if entering and leaving building
+-- Have the 1004 victory message about the reward. Message about Wharf Rats go somewhere else.
+
+QuestorOffer:  [1000]
+<ce>            A merchant we protect owes us some
+<ce>            serious coin and the fool has decided
+<ce>            not to pay. I want you to remind that
+<ce>            deadbeat what protection money is.
+<--->
+<ce>            You know our ways, %lev. When we
+<ce>            protect a merchant, he sends us money.
+<ce>            When we receive the money, we ensure
+<ce>            no harm comes to his shop. But when
+<ce>            that merchant decides to stop sending
+<ce>            the gold, we remind him who truly owns
+<ce>            his store. Care to teach one of those
+<ce>            merchants a lesson?
+
+RefuseQuest:  [1001]
+<ce>            So beating up somebody is not your style,
+<ce>            %lev? Fine. Talk to me later and
+<ce>            I might have a burglary job.
+
+AcceptQuest:  [1002]
+<ce>            Good. Get to _shop_ and speak to
+<ce>            the owner, _dummy_. Not the fool
+<ce>            %g employs to deal with customers. If
+<ce>            _dummy_ is stubborn, break something valuable
+<ce>            from %g3 store. I’m sure there’s one such
+<ce>            item lying around somewhere. A word of warning 
+<ce>            though, I don’t want %g2 killed. Bad for
+<ce>            business. See you in =timer_ days.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>    Here, take your pay. See ya.
+
+
+RumorsDuringQuest:   [1005]
+Someone I know who shopped at  _shop_ told me the owner seemed stressed and nervous. 
+
+RumorsPostFailure:   [1006]
+There’s been a violent burglary at _shop_, I heard. The owner, _dummy_ was found unconscious and numerous wares were stolen. It’s horrible!
+
+RumorsPostSuccess:   [1007]
+I feel safe shopping at _shop_. _dummy_ recently hired guards to make sure no thief steals his wares.
+
+QuestorPostsuccess:  [1008]
+Terrible weather outside. Oh, screw that small talk. %lev, you may be interested to know that our dear shopkeeper is now paying us in time. Thanks to you.
+
+QuestorPostfailure:  [1009]
+Ye remember the shopkeeper ye had to shake down for our protection money? Well since ye failed, we hired some muscles to rough him up and mess up his store. Ye know what? He actually pays on time now. No thanks to you.
+
+Message: 1010
+%qdt
+I’m on a job from the Thieves Guild in
+___questgiver_ to remind
+_dummy_, owner of
+_shop_ here in town, how
+important it is to pay for protection
+on time. The guild hasn't received the
+last payment and the the guildmaster's
+impatient. If I can’t convince
+_dummy_ with words,
+maybe breaking something valuable from
+the store will work. I have =timer_ days
+to get this done.
+
+Message: 1020
+<ce>    You’re from those thugs? Well I’ve had
+<ce>    enough of your intimidation. Your guild’s
+<ce>    protection brings me no benefit. In fact,
+<ce>    I’ve been stolen from last week! So, no.
+<ce>    Tell your good-for-nothing mecreants I’ll
+<ce>    call the guards if they send another
+<ce>    lackey again. Scram!
+
+Message: 1021
+<ce>    This _object_ looks valuable. Breaking
+<ce>    it may convince _dummy_ to
+<ce>    change %g3 mind.
+<ce>
+<ce>    Before _dummy_ can react, you pick
+<ce>    the gem and smash it on the wall with all
+<ce>    your strength, shattering it to pieces
+<ce>    before %g3 alarmed eyes. The _object_
+<ce>    looks indeed to be beyond repair.
+<ce>
+<ce>
+<ce>    "No! That was priceless! All right! I get
+<ce>    it. I’ll pay on time from now on. Just 
+<ce>    don’t smash anything else. And get out of
+<ce>    here!"
+<--->
+<ce>    This _object_ looks valuable. Breaking
+<ce>    it may convince _dummy_ to
+<ce>    change %g3 mind.
+<ce>
+<ce>    Before _dummy_ can react, you step
+<ce>    on the gem several times, crushing it in
+<ce>    pieces under the alarmed gaze of
+<ce>    _dummy_. The _object_ looks indeed
+<ce>    to be beyond repair.
+<ce>
+<ce>
+<ce>    "No! That was priceless! All right! I get
+<ce>    it. I’ll pay on time from now on. Just 
+<ce>    don’t smash anything else. And get out of
+<ce>    here!"
+
+Message: 1023
+<ce>    This _object_ looks valuable. Breaking
+<ce>    it may convince _dummy_ to
+<ce>    change %g3 mind.
+<ce>
+<ce>    Before _dummy_ can react, you pick
+<ce>    the gem and throw it on the wall with all
+<ce>    your strength, shattering it to pieces
+<ce>    before %g3 eyes. The _object_ looks indeed
+<ce>    to be beyond repair. You see fury in
+<ce>    _dummy_'s eyes.
+<ce>
+<ce>
+<ce>    "I won't be intimidated by your goddamn
+<ce>    manners!"
+<--->
+<ce>    This _object_ looks valuable. Breaking
+<ce>    it may convince _dummy_ to
+<ce>    change %g3 mind.
+<ce>
+<ce>    Before _dummy_ can react, you step
+<ce>    on the gem several times, crushing it
+<ce>    in pieces before %g3 eyes. The _object_
+<ce>    looks indeed to be beyond repair. You
+<ce>    see fury in _dummy_'s eyes.
+<ce>
+<ce>
+<ce>    "No! You'll pay for that!"
+
+Message: 1028
+<ce>    I surrender! Stop! You will get the gold in
+<ce>    time from now on! Just, don't hurt me anymore.
+<ce>    I'm sorry!
+
+Message: 1030
+<ce>    Wha… what? Oh, it’s one of you people. So,
+<ce>    your boss doesn’t even bother to show up
+<ce>    anymore, eh? Well, petty threats and fist
+<ce>    waving are not going to sway me. You people
+<ce>    are all talk, and everyone knows it! Pay
+<ce>    you to protect me? You can’t even protect
+<ce>    yourselves! Here, let me introduce you to
+<ce>    my personal guard. 
+<ce>
+<ce>    %nam, show this damn %ra I won’t
+<ce>    have any business with the Thieves Guild, 
+<ce>    will you?
+
+Message: 1035
+<ce>    Okay, okay! Oh, my. Tell your boss I’ll be
+<ce>    paying from now on, okay? Just, don’t hurt 
+<ce>    me. Please. I… I need to clean that mess
+<ce>    before a customer arrives. 
+
+Message: 1040
+<ce>    Protection money? Please! Please! It’s not
+<ce>    my fault. It’s the Wharf Rats! They came in
+<ce>    some days ago, broke my nose and made a
+<ce>    mess of the place, saying they owned the
+<ce>    store now. They said they’d burn my shop if
+<ce>    I informed you!
+
+Message: 1045
+<ce>    _dummy_ leaves in a hurry as
+<ce>    two bandits leave their hiding spot, grinning.
+<ce>    One of them says :
+<ce>
+<ce>
+<ce>    "_shop_ is property of the Wharf Rats
+<ce>    now, lackey. When we're done with you, we’ll send 
+<ce>    your severed head to your boss with our personal
+<ce>    greetings strapped to your lips. Get that %ra!"
+
+Message: 1048
+<ce>    The lone remaining Wharf Rat, startled by the turn
+<ce>    of events, turns tail and runs out of _shop_.
+
+Message: 1060
+<ce>    There’s always one who thinks he can outsmart us
+<ce>    and get away with paying us, right %lev? 
+
+Message: 1063
+<ce>    So we lost _shop_ to those damn Wharf Rats?
+<ce>    %oth, those dung-eating sons of whores will get what’s
+<ce>    coming to them, mark my words. And we’ll need more 
+<ce>    gold to increase the safety of our places. So, I can’t
+<ce>    spare any coin for your job, %lev. I bet we’ll have an
+<ce>    opportunity to hit ‘em where it hurts, don’t worry.
+
+Message: 1065
+<ce>    The damn Wharf Rats tried to take over _shop_,
+<ce>    you say? %oth, you dealt them a terrible blow by
+<ce>    killing their boys. That’s what I call a perfect job. You other
+<ce>    lackeys better take notes of what %pcf did here today.
+<ce>    For saving our shop and sending those dung-eating sons of whores
+<ce>    to Arkay, take this _magicitem_ as a bonus.
+<ce>    With my utmost appreciation.
+
+Message: 1068
+<ce>    What in Oblivion you mean _dummy_'s dead!?
+<ce>    Didn't I make myself clear, %lev!? %oth!
+<ce>    %oth! What good are your ears if ye can't use 'em?
+<ce>    Get out of my sight!
+
+
+
+QBN:
+Item _reward_ gold
+Item _magicitem_ magic_item
+Item _object_ gem
+
+Person _questgiver_ group Questor male
+Person _dummy_ group Shopkeeper
+Person _guardnpc_ group Resident1
+
+Place _shop_ local generalstore
+
+Foe _merchant_ is Acrobat
+Foe _guard_ is Warrior
+Foe _wharf1_ is Rogue
+Foe _wharf2_ is Assassin
+
+Clock _timer_ 4.00:00 0 flag 1 range 0 1
+
+variable _scchoosen_
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    pc at _shop_ set _inside_
+    place npc _dummy_ at _shop_
+    hide npc _guardnpc_
+
+_inside_ task:
+
+_scenario_ task:
+    when _inside_ and not _scchoosen_
+    pick one of _scenario1_ _scenario2_ _scenario3_ _scenario4_
+
+-- 1, Object to break
+
+_scenario1_ task:
+    place item _object_ at _shop_
+    setvar _scchoosen_
+
+_dummygreet1_ task:
+    when _dummyclicked_ and _scenario1_ and not _breakobject_
+    say 1020
+
+_touchobject_ task:
+    when _inside_ and _scenario1_
+    have _object_ set _breakobject_
+
+_breakobject_ task:
+    say 1021
+    take _object_ from pc
+
+_success1_ task:
+    when _breakobject_ and _qgclicked_
+    say 1060
+    give pc _reward_
+    end quest
+
+-- 2, Object to break, dummy resists
+
+_scenario2_ task:
+    place item _object_ at _shop_
+    setvar _scchoosen_
+
+_dummygreet2_ task:
+    when _dummyclicked_ and _scenario2_ and not _breakobject2_
+    say 1020
+
+_touchobject2_ task:
+    when _inside_ and _scenario2_
+    have _object_ set _breakobject2_
+
+_breakobject2_ task:
+    say 1023
+    take _object_ from pc
+    hide npc _dummy_
+    place foe _merchant_ at _shop_
+
+_injured_ task:
+    injured _merchant_
+    say 1028
+    restore _dummy_
+    remove foe _merchant_
+
+_slain_ task:
+    killed _merchant_
+
+_success2_ task:
+    when _injured_ and _qgclicked_
+    say 1060
+    give pc _reward_
+    end quest
+
+_fail_ task:
+    when _qgclicked_ and _slain_
+    say 1068
+    end quest
+
+-- 3, Bodyguard
+
+_scenario3_ task:
+    setvar _scchoosen_    
+
+_dummygreet3_ task:
+    when _dummyclicked_ and _scenario3_ and not _guardslain_
+    place foe _guard_ at _shop_
+    say 1030
+
+_guardslain_ task:
+    killed _guard_
+    say 1035
+
+_success3_ task:
+    when _guardslain_ and _qgclicked_
+    say 1060
+    give pc _reward_
+    end quest
+
+-- 4, Wharf Rat attack
+
+_scenario4_ task:
+    setvar _scchoosen_
+
+_dummygreet4_ task:
+    when _dummyclicked_ and _scenario4_
+    say 1040
+
+_wharfrats_ task:
+    when _dummygreet4_
+    hide npc _dummy_
+    say 1045
+    place foe _wharf1_ at _shop_
+    place foe _wharf2_ at _shop_
+
+_wharf1slain_ task:
+    killed _wharf1_
+
+_wharf2slain_ task:
+    killed _wharf2_
+
+_flee1_ task:
+    when _wharf2slain_
+    say 1048
+    remove foe _wharf1_
+
+_flee2_ task:
+    when _wharf1slain_
+    say 1048
+    remove foe _wharf2_   
+
+_wharfgone_ task:
+    when _flee1_ or _flee2_
+
+_success4_ task:
+    when _wharfgone_ and _qgclicked_
+    say 1065
+    get item _magicitem_
+    give pc _reward_
+    change repute with _questgiver_ by +3
+    end quest
+
+_success5_ task:
+    when _wharfrats_ and _qgclicked_ and not _wharfgone_
+    say 1063
+    give pc _reward_
+    end quest
+
+-- Control tasks
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_dummyclicked_ task:
+    clicked npc _dummy_
+ 
+_timer_ task:
+    end quest
+
+_resolution_ task:
+    when _breakobject_ or _breakobject2_ or _slain_ or _guardslain_ or _wharfgone_ or _wharfrats_    
+
+_clearclick_ task:
+    when _qgclicked_ and not _resolution_
+    clear _qgclicked_ _clearclick_

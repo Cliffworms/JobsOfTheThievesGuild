@@ -1,0 +1,523 @@
+Quest: JOTG12
+DisplayName: First Warning
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            There’s someone new in town. We got reports
+<ce>            of a few houses that got robbed. Houses that
+<ce>            were not our hit list. Care to send the
+<ce>            Thieves Guild invitation to our new friend?
+<--->
+<ce>            A shop’s been robbed last night and it
+<ce>            wasn’t on our list. That means a freelance
+<ce>            thief arrived and needs to be invited. Got
+<ce>            some time?
+<--->
+<ce>            We got a complaint from the town’s lord about
+<ce>            a break-in at one of his friends’ house. You
+<ce>            know as well as I do that we don’t target the
+<ce>            lord’s buddies, so we need to invite that
+<ce>            freelance thief to the Thieves Guild and I
+<ce>            would like you to do it.
+
+RefuseQuest:  [1001]
+<ce>            Not enough time to help bolster your guild’s
+<ce>            numbers? That’s a shame, %lev.
+<ce>            A damn shame.
+<--->
+<ce>            Yeah that’s what I thought. You ain’t the
+<ce>            kind that likes to deliver stuff around
+<ce>            %reg anyway.
+
+AcceptQuest:  [1002]
+<ce>            Ask around for a fella named _dummy_.
+<ce>            We know %g’s hanging around here. First, you
+<ce>            will give %g2 this letter and then you’ll
+<ce>            travel to _res_ in __res_
+<ce>            to hide this other letter in the occupant’s
+<ce>            _clothes_. Once that’s done, go to
+<ce>            _inn2_ in __inn2_
+<ce>            and wait =timer_ days. Yeah, I know. It’ll be
+<ce>            boring to wait, but we need to keep
+<ce>            freelancers in line. If %g shows up and joins,
+<ce>            perfect. If %g never shows up, %g’ll pay. In
+<ce>            either case, get back to me. Have fun and don’t
+<ce>            spend your time drowning in _inn2_’s
+<ce>            ale, alright?
+<--->
+<ce>            Good, this’ll be just like when you first joined.
+<ce>            The thief’s called _dummy_ and
+<ce>            should be hanging around here. Give %g2 this
+<ce>            letter and hide this other letter in the
+<ce>            _clothes_ found in _res_ in __res_.
+<ce>            Then go to _inn2_ in __inn2_
+<ce>            and wait =timer_ days. Fun times, right? If %g
+<ce>            arrives and asks to join, welcome %g2. If you
+<ce>            stand there waiting more than =timer_ days, %g's
+<ce>            gonna wish %g joined us. Whatever happens, get
+<ce>            back to me afterwards. All good? Get going.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>            Take this _reward_ gold for a job well done, %lev.
+<ce>            Don’t spend it all in one place. Cheers.
+
+RumorsDuringQuest:   [1005]
+I got a boil the other day ... but it healed.
+<--->
+I just had a three hour conversation about the weather.
+<--->
+The weather is pretty usual for this time of year.
+<--->
+It seems a trifle coolish in %cn for this time of year.
+<--->
+It sure is a lot warmer today than this time last year.
+<--->
+My great aunt is going to a specialist across the Bay.
+<--->
+It's always funny what time it gets dark around here.
+<--->
+We should erect a war statue around here.
+<--->
+The kids these days with their magic. %oth, I don't know.
+<--->
+I had the weirdest dream last night.
+<--->
+I heard a great joke. %jok
+<--->
+%jok Actually, that's a joke.
+<--->
+%jok Can you explain that to me?
+<--->
+The legal system in %reg has its good points and bad ones.
+
+RumorsPostfailure:  [1006]
+I got a boil the other day ... but it healed.
+<--->
+I just had a three hour conversation about the weather.
+<--->
+The weather is pretty usual for this time of year.
+<--->
+It seems a trifle coolish in %cn for this time of year.
+<--->
+It sure is a lot warmer today than this time last year.
+<--->
+My great aunt is going to a specialist across the Bay.
+<--->
+It's always funny what time it gets dark around here.
+<--->
+We should erect a war statue around here.
+<--->
+The kids these days with their magic. %oth, I don't know.
+<--->
+I had the weirdest dream last night.
+<--->
+I heard a great joke. %jok
+<--->
+%jok Actually, that's a joke.
+<--->
+%jok Can you explain that to me?
+<--->
+The legal system in %reg has it good points and bad ones.
+
+RumorsPostsuccess:  [1007]
+I got a boil the other day ... but it healed.
+<--->
+I just had a three hour conversation about the weather.
+<--->
+The weather is pretty usual for this time of year.
+<--->
+It seems a trifle coolish in %cn for this time of year.
+<--->
+It sure is a lot warmer today than this time last year.
+<--->
+My great aunt is going to a specialist across the Bay.
+<--->
+It's always funny what time it gets dark around here.
+<--->
+We should erect a war statue around here.
+<--->
+The kids these days with their magic. %oth, I don't know.
+<--->
+I had the weirdest dream last night.
+<--->
+I heard a great joke. %jok
+<--->
+%jok Actually, that's a joke.
+<--->
+%jok Can you explain that to me?
+<--->
+The legal system in %reg has its good points and bad ones.
+
+QuestorPostsuccess:  [1008]
+Hey there, %lev. Want to go spend a couple of weeks at tavern to wait for another freelance thief? Heh, didn’t think so.
+
+QuestorPostfailure:  [1009]
+%lev %pcf... Don't count on me on sending a recommendation to the Crow for ye. Can't even handle inviting new members to join us, bah!
+
+Message: 1010
+%qdt
+There is a freelance thief operating in
+_questgiver_ and the Thieves
+Guild guildmaster wants me to contact the
+fella, whose name is _dummy_.
+First, I must deliver %g2 a letter, then
+go to _res_ in __res_
+to hide a second letter in some _clothes_.
+Finally, I’ll have to wait for our prospect
+at _inn2_ in __inn2_
+until =timer_ days have passed. If
+_dummy_ does not show up,
+ %g’ll be considered a possible target
+ for our guild. 
+
+Message: 1020
+<ce>                Wait, %lev. I forgot to give you the directions
+<ce>                to ___dgn_. If _dummy_
+<ce>                returns with the mage’s clothes, show %g2 how to
+<ce>                get there, yeah?
+
+Message: 1030
+<ce>                _dummy_ is busy drinking from a mug
+<ce>                filled with cold ale. You slip the letter in %g3
+<ce>                pockets. None the wiser, %g continues drinking,
+<ce>                apparently drunk.
+<--->
+<ce>                You hand over the letter to _dummy_
+<ce>                who accepts it with a curious look. The freelance
+<ce>                thief opens %g3 mouth to ask a question, but
+<ce>                suddenly stops, probably aware of your
+<ce>                affiliations. 
+<--->
+<ce>                _dummy_ is busy eating a meal. You
+<ce>                slip the letter in %g3 pockets. None the wiser,
+<ce>                %g continues eating.
+
+Message: 1040
+<ce>                You put the second Thieves Guild letter inside the
+<ce>                _clothes_ and put it back where it was.
+
+Message: 1050
+<ce>                The house occupant, a wizard, notices you with the
+<ce>                _clothes_ in hand. You quickly drop them,
+<ce>                having put the letter inside.
+<ce>
+<ce>                “What!? Thief! I’ll teach you to rummage through my
+<ce>                things!”
+
+Message: 1055
+<ce>                The house occupant, a wizard, notices you with the
+<ce>                _clothes_ in hand. You quickly drop them,
+<ce>                having put the letter inside.
+<ce>
+<ce>                “What!? Thi-- Wait, I know you. You are %pcn,
+<ce>                friend of the Mages Guild are you not? Oh please,
+<ce>                These clothes are not yet enchanted. A fine piece
+<ce>                is it not? I shall bring it to the Mages Guild’s
+<ce>                enchanter next time I visit. Maybe we’ll meet up
+<ce>                there? Now, how about a game of chess? No? I'll
+<ce>                you at the Mages Guild then. Farewell.”
+
+Message: 1070
+<ce>                With the wizard’s death, the Thieves Guild’s initation
+<ce>                for _dummy_ is forfeit. 
+
+Message: 1080
+<ce>                The inn’s door opens, letting _dummy_ inside.
+<ce>                The aspiring thief walks towards you and gets the
+<ce>                _clothes_ from %g3 backpack, handing it to you.
+
+Message: 1090
+<ce>                “Another initiate. Sometimes I wonder if the guild can
+<ce>                hold them all. Ah, I see they sent you after a mage's
+<ce>                _clothes_. It's a popular choice of late.
+<ce>                You are now a member of the Thieves Guild. Whenever you
+<ce>                enter a town, you will know if there are any guild
+<ce>                buildings there. Unfortunately guild rules say I have
+<ce>                to pay you for this worthless piece of trash because
+<ce>                you stole it in the service of the guild. Here's a gold
+<ce>                piece.” -- you say to _dummy_ who
+<ce>                appears quite satisfied of having being introduced to
+<ce>                the Thieves Guild.
+<ce>
+<ce>                “Oh, I almost forgot. You are also entitled to a dungeon
+<ce>                map. Here, let me show you where ___dgn_ 
+<ce>                is on yours." you say.
+<ce>
+<ce>                “Thanks, %ra. ‘twas my intention to join yer
+<ce>                guild. See ya around” _dummy_ replies.
+
+Message: 1091
+<ce>                "Another initiate. Sometimes I wonder if the guild can
+<ce>                hold them all. Ah, I see they sent you after--” you start
+<ce>                saying to _dummy_ before %g interrupts you.
+<ce>
+<ce>                “Cut the crap! You don’t remember me? Of course not. I
+<ce>                know your face, though. You and your damn thieves robbed
+<ce>                me last month. I already killed one of ‘em and you’re
+<ce>                next. Die thief! DIE!” %g say, fury in %g3 eyes.
+
+Message: 1092
+<ce>                “Another initiate. Sometimes I wonder if the guild can
+<ce>                hold them all. Ah, I see they sent you after--” you start
+<ce>                saying to _dummy_ before %g interrupts you.
+<ce>
+<ce>                “Just die, Guildie. The Wharf Rats say hello.” %g says,
+<ce>                smiling a wicked smile.
+
+Message: 1093
+<ce>                It has been more than =timer_ days. Either _dummy_
+<ce>                died on the way to _inn2_ or decided
+<ce>                to ignore the Thieves Guild’s invitation.
+
+Message: 1094
+<ce>                You realize you missed the meeting with
+<ce>                _dummy_ at _inn2_.
+<ce>                More than =timer_ days have passed since
+<ce>                you handed %g the invitation letter.
+
+
+Message: 1100
+<ce>                _dummy_'s now one of ours. That’s good.
+<ce>                That’ll keep %cn’s lord happy. We have a
+<ce>                good deal running between us.
+
+Message: 1101
+<ce>                %oth. So that damn bastard was the one
+<ce>                who killed %nam. Yeah it’s not the first time
+<ce>                I hear of someone attracting our attention just so he can
+<ce>                kill one of us. Good job ridding us of that fool,
+<ce>                %lev.
+
+Message: 1102
+<ce>                A Wharf Rat!? %oth! That’s creative, coming
+<ce>                from them. Damn creative. Thanks for letting me know
+<ce>                and carrying the whole thing. Maybe next time we’ll
+<ce>                get ourselves a real thief.
+
+Message: 1103
+<ce>                Ah, _dummy_ refused our kind invitation. Stay
+<ce>                tuned, %lev. I may contact you as soon we trace %g2
+<ce>                back. Nobody gets to steal on our turf without our invitation.
+<ce>                Our organization depends on it. 
+
+Message: 1104
+<ce>                %oth. What in Oblivion were you thinking, killing
+<ce>                that mage at _res_, %lev!? Now
+<ce>                _dummy_ will arrive there, hoping to
+<ce>                steal something and will find the wizard’s corpse
+<ce>                and city guards investigating. Maybe %g’ll even be
+<ce>                suspected of murder. What a damn fool you are,
+<ce>                %pcf. Damn fool indeed. Get out of here.              
+
+Message:  1110
+<ce>                             %pcn
+<ce>                            __inn2_
+
+Message:  1120
+_dummy_,
+    You are a thief. Do not
+ try to deny it, you have
+ been seen in the act. There
+ is honor among thieves.
+ Either join the guild or
+ face the consequences. Steal
+ the _clothes_ from
+ _res_
+ in __res_
+ if you desire to join us.
+ You have =timer_ days.
+
+ Message: 1130
+<ce>            I guess I'll see you around the guildhall,
+<ce>            %ra. 
+
+QBN:
+Item _reward_ gold
+Item _dummyreward_ gold range 1 to 1
+Item _clothes_ womens_clothing
+Item _letter_ letter used 1120
+Item _note_ letter used 1110
+
+Person _questgiver_ group Questor male
+Person _dummy_ group Resident3
+Person _mg_ faction The_Mages_Guild
+
+Place _res_ remote house
+Place _inn1_ local tavern
+Place _inn2_ remote tavern
+Place _dgn_ remote dungeon
+
+Foe _magefoe_ is Mage
+Foe _dummyfoe1_ is Rogue
+Foe _dummyfoe2_ is Bard
+
+Clock _timer_ 20.00:00 25.00:00
+Clock _arrival_ 05:00 24:00
+
+variable _mgfriend_
+variable _hidenote_
+variable _notehidden_
+variable _seen_
+variable _unseen_
+variable _inside_
+variable _sc4_
+variable _timer_
+variable _arrival_
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    get item _letter_
+    get item _note_
+    reveal _dgn_
+    place item _clothes_ at _res_
+    place npc _dummy_ at _inn1_
+    say 1020
+    have _clothes_ set _hidenote_
+    pc at _inn2_ do _inside_
+
+_day_ task:
+    daily from 08:00 to 20:00
+
+-- Give letter to freelancer
+
+_letterdummy_ task:
+    toting _letter_ and _dummy_ clicked saying 1030
+    take _letter_ from pc
+    give item _letter_ to _dummyfoe1_
+    give item _letter_ to _dummyfoe2_
+
+--Head to residence to put the note in the clothes
+_mgrep_ task:
+    repute with _mg_ exceeds 20 do _mgfriend_
+
+_hidenoteday_ task:
+    when _hidenote_ and _day_ and not _notehidden_
+    clear _dummyclicked_
+    say 1050
+    hide npc _dummy_
+    take _note_ from pc
+    take _clothes_ from pc    
+    setvar _notehidden_
+    pick one of _seen_ _seen_ _unseen_
+
+_hidenotenight_ task:
+    when _hidenote_ and not _day_ and not _notehidden_
+    clear _dummyclicked_
+    say 1040
+    hide npc _dummy_
+    take _note_ from pc
+    take _clothes_ from pc    
+    setvar _notehidden_
+    pick one of _seen_ _unseen_ _unseen_
+
+_seen1_ task:
+    when _seen_ and not _mgrep_
+    give item _note_ to _dummyfoe1_
+    give item _note_ to _dummyfoe2_
+    say 1050
+    place foe _magefoe_ at _res_
+
+_seen2_ task:
+    when _seen_ and _mgrep_
+    give item _note_ to _dummyfoe1_
+    give item _note_ to _dummyfoe2_
+    say 1055
+    create foe _magefoe_ every 0 minutes 1 times with 100% success
+    restrain foe _magefoe_
+
+_mageslain_ task:
+    killed _magefoe_
+    say 1070
+
+--Go wait at the tavern
+
+_timerinn_ task:
+    when _inside_ and _hidenote_ and not _mageslain_
+    start timer _arrival_
+
+_dummyarrives_ task:
+    when _arrival_ and _inside_
+    pick one of _sc1_ _sc1_ _sc2_ _sc3_ _sc4_
+
+_sc1_ task:
+    say 1080    
+    say 1090
+    take _dummyreward_ from pc
+    place npc _dummy_ at _inn2_
+    restore npc _dummy_
+    stop timer _timer_
+
+_sc2_ task:
+    say 1080    
+    say 1091
+    place foe _dummyfoe2_ at _inn2_
+    stop timer _timer_
+    
+_sc3_ task:
+    say 1080    
+    say 1092
+    place foe _dummyfoe1_ at _inn2_
+    stop timer _timer_
+
+_dummynoshow_ task:
+    when _sc4_ and _timer_ and _inside_
+    say 1093
+    stop timer _timer_
+
+_dummyinn2_ task:
+    when _dummyclicked_ and _inside_
+    say 1130
+
+_dummyclicked_ task:
+    clicked npc _dummy_
+
+---Resolution
+
+_success1_ task:
+    when _sc1_ and _qgclicked_
+    say 1100
+    give pc _reward_
+    end quest
+
+_success2_ task:
+    when _sc2_ and _qgclicked_
+    say 1101
+    give pc _reward_
+    end quest
+
+_success3_ task:
+    when _sc3_ and _qgclicked_
+    say 1102
+    give pc _reward_
+    end quest
+
+_success4_ task:
+    when _dummynoshow_ and _qgclicked_
+    say 1103
+    give pc _reward_
+    end quest
+
+_failure1_ task:
+    when _mageslain_ and _qgclicked_
+    say 1104
+    end quest
+
+_resolution_ task:
+    when _sc1_ or _sc2_ or _sc3_ or _dummynoshow_ or _failure1_
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_clearqgclicked_ task:
+    when _qgclicked_ and not _resolution_
+    clear _qgclicked_ _clearqgclicked_
+
+_meetingfailed_ task:
+    when _timer_ and not _inside_
+    say 1094
+    end quest

@@ -1,0 +1,228 @@
+Quest: JOTG02
+DisplayName: Letter of Pardon
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            Our spymaster got wind of documents that
+<ce>            may, how should I put it,  "convince" a
+<ce>            lord to overlook our activities in his
+<ce>            city. So, ye think ye have what it takes
+<ce>            to get those papers from a well-guarded
+<ce>            palace?
+                                     <--->
+<ce>            One of our assistants is well paid to
+<ce>            forge official documents. Turns out a
+<ce>            lord’s about to publish a proclamation
+<ce>            that may benefit us. I want ye to get
+<ce>            in that lord’s palace and steal it so
+<ce>            we can have it forged to our own
+<ce>            benefit. 
+                                     <--->
+<ce>            Word on the street is that some lord
+<ce>            likes to write pardon edicts to erase 
+<ce>            his noble friends' less than favorable
+<ce>            deeds. I say we get one of those and
+<ce>            have it forged in case one of ours
+<ce>            gets caught. Care to help? 
+
+RefuseQuest:  [1001]
+<ce>            Didn’t think you’d skip this one, %lev.
+<ce>            'Tis an opportunity to show yer good and ye
+<ce>            let it go. Another one will get his
+<ce>            promotion then, not you. 
+
+AcceptQuest:  [1002]
+<ce>            Alright. The palace we heard about is the one
+<ce>            in __palace_. I guess I shouldn't have
+<ce>            to tell you to break into the place at night
+<ce>            when the place is empty, right? Anyway, it
+<ce>            shouldn’t take you more than =timer_ days to
+<ce>            get there, grab the stuff and be back. I want
+<ce>            that job to be discreet and fast. No killin’,
+<ce>            or those documents will be useless. Is that
+<ce>            clear %lev? I’m sure it is.
+                                     <--->
+<ce>            Good. Get your sorry hide to the palace in
+<ce>            __palace_. Make sure you break into the place
+<ce>            at night. I don't think the lord would want to
+<ce>            catch you snooping around the place while court
+<ce>            is in session. Once you grab the document, get
+<ce>            back here and I'll have it forged. See you in
+<ce>            =timer_ days, %lev.
+
+QuestFail:  [1003]
+<ce>            What's the matter, %lev? Afraid of breaking
+<ce>            into a palace?
+
+QuestComplete:  [1004]
+<ce>            That’ll help the guild for sure. Now it’s our
+<ce>            forger’s turn to help put those documents to
+<ce>            good use. As for ye, here’s yer standard guild
+<ce>            fee. See you around, %lev.
+
+RumorsDuringQuest:   [1005]
+They say that close friends of __palace_’s lord can get pardoned for their crimes.
+<--->
+A noble from __palace_ got away with murder! This is preposterous!
+<--->
+I heard that nobles who are good friends with __palace_’s lord can get away with tax evasion. 
+
+RumorsPostFailure:   [1006]
+Street gangs went crazy when they heard the lord of __palace_ kept pardon edicts in the palace.
+<--->
+The town crier of __palace_ declared that all pardon edicts are forfeit. 
+<--->
+Apparently a thief got caught red-handed trying to snatch a pardon edict from __palace_’s palace.
+
+RumorsPostSuccess:   [1007]
+It’s strange. The jails in __palace_ are emptier than usual. 
+<--->
+There have been less public executions in __palace_ of late. Where could these criminals be?
+<--->
+A pickpocket who had been caught robbing a noble in __palace_ was pardoned! Can you imagine?
+
+QuestorPostsuccess:  [1008]
+Thanks to you, we’ve been able to free several of our jailed boys and girls. How can I help you?
+
+QuestorPostfailure:  [1009]
+One of our best thieves will need to serve five more years because we couldn’t get a pardon edict. You’d best make up for your failure.
+
+Message: 1010
+<ce>
+__palace_
+   22nd of Sun's Dawn, 3E404
+<ce>
+    By the authority of his lordship %mn2,
+let it be known that %fn2, bearer of
+this document, is henceby pardoned of the
+crimes for which she was suspected of commiting.
+%mn2 is to be released immediately and
+allowed to walk free and without prejudice.
+<ce>
+    Refusal to apply this decree will lead
+to accusations of treason and jail or hard
+labor.
+<ce>
+<ce>Signed,
+<ce>%mn2, Lord of __palace_
+
+Message: 1020
+<ce>            As you pick up the document, a knight turns
+<ce>            the corner and sees you. 
+<ce>
+<ce>            "Thief! Stop right there!" he shouts as he
+<ce>            rushes towards you. You hear more sounds of
+<ce>            heavy boots coming your way...
+
+Message: 1025
+<ce>            A guard on patrol turns the corner and sees
+<ce>            you.
+<ce>
+<ce>            "Halt! Stop right there, criminal scum!"
+
+Message: 1030
+%qdt:
+_questgiver_ sent me to steal a pardon
+edict from the palace in __palace_.
+I have been specifically instructed not
+to kill anyone. I must return with the
+document at the Thieves Guild in
+___questgiver_ in =timer_ days or less.
+
+Message: 1040
+<ce>            That edict’s useless, %lev. Why? Because
+<ce>            everyone’s talkin’ about how some fellow
+<ce>            was butchered by a %ra thief who
+<ce>            ran away with the document. The lord’s
+<ce>            most likely aware that the edict was the
+<ce>            target and he’ll make sure it’s useless
+<ce>            to us now. What a botched job. Get out
+<ce>            of here.
+
+Message: 1050
+<ce>            That edict’s useless, %lev. Why? Because
+<ce>            everyone’s talkin’ about how a %ra
+<ce>            thief ran away with documents from the
+<ce>            palace. The lord's most likely aware that
+<ce>            the edict was the target and he’ll make
+<ce>            sure it's useless to us now. What a
+<ce>            botched job. Get out of here.
+
+QBN:
+Item _reward_ gold
+Item _document_ letter used 1010
+
+Place _palace_ remote palace
+
+Person _questgiver_ group Questor male
+--Person _db_ faction The_Dark_Brotherhood
+
+Foe _guard_ is Knight
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+
+--variable _pcdbfriend_
+
+--	Quest start-up:
+	start timer _timer_
+	log 1030 step 0
+    pc at _palace_ set _inside_
+    place item _document_ at _palace_
+
+_inside_ task:
+
+_day_ task:
+    daily from 10:00 to 16:00
+
+_pickupday_ task:
+    when _day_ and _inside_
+    have _document_ set _dayattack_
+
+_dayattack_ task:
+    say 1020
+    spawncityguards immediate
+    setplayercrime Theft
+
+_nightshift_ task:
+    when _inside_ and not _day_
+    send _guard_ every 30 minutes 1 times with 100% success msg 1025
+
+_slain_ task:
+    killed _guard_
+ 
+_fail_ task:
+    when _slain_ or _dayattack_
+
+_qgdocument_ task:
+    toting _document_ and _questgiver_ clicked
+
+_questsuccess_ task:
+    when _qgdocument_ and not _fail_
+    give pc _reward_
+    end quest
+
+_questfail1_ task:
+    when _qgdocument_ and _slain_
+    say 1040
+    end quest
+
+_questfail2_ task:
+    when _qgdocument_ and _dayattack_ and not _slain_
+    say 1050
+    end quest
+
+--_pcdbrepcheck_ task:
+--    repute with _db_ exceeds 1 do _pcdbfriend_
+
+--_dbinvitecheck1_ task:
+--    when _slain_ and not _pcdbfriend_
+--    pick one of _dbinviteyes_ _dbinviteno_ _dbinviteno_ _dbinviteno_ _dbinviteno_
+
+--_dbinviteyes_ task:
+--    start quest JOTGDB
+
+--_dbinviteno_ task:
+
+_timer_ task:
+    end quest

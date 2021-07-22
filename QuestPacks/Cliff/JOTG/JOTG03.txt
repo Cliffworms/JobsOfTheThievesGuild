@@ -1,0 +1,374 @@
+Quest: JOTG03
+DisplayName: Healer!
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            %pcf! Do ye know of any healing spells?
+<ce>            One of ours got hit by some foolish trap during a
+<ce>            heist. If ye don't know any, can you run to a
+<ce>            healer now?
+<--->
+<ce>            Hey, know any spells to heal wounds? One of our
+<ce>            guildmates got hit a trap and I heard it's pretty
+<ce>            bad. If you don't have that knowledge, care to
+<ce>            fetch a healer now?
+<--->
+<ce>            "So, ready for a standard burglary? I got one for ya.
+<ce>            Head to the palace in --"
+<ce>
+<ce>            The front door bursts open as a fellow thief,
+<ce>            seemingly alarmed, screams :
+<ce>
+<ce>            "One of our mates is hurt! Help, quick!"
+<ce>
+<ce>            "Shadow takes me. Screw that burglary, %pcf!
+<ce>            Fetch me a healer right away or use a spell if ya
+<ce>            know one!"
+
+RefuseQuest:  [1001]
+<ce>           %oth, somebody fetch me a damn priest!
+
+AcceptQuest:  [1002]
+<ce>            Then go! They brought _dummy_
+<ce>            to  _guild_. Go there if ye know
+<ce>            a spell or run to _healer_
+<ce>            in _res_. From the looks of it,
+<ce>            _dummy_ will probably be dead later today.
+<ce>            By Dagon, I doubt the poor bastard's live
+<ce>            an hour!. GO!
+<--->
+<ce>            Don't screw up, %pcf. Either heal
+<ce>            _dummy_ yerself in _guild_
+<ce>            where %g's hiding or run to _healer_ in
+<ce>            _res_ like Molag Bal itself was after your arse!
+<ce>            From what I've been told, %g won't last more
+<ce>            than an hour. Go go go!
+
+QuestFail:  [1003]
+<ce>            What in Oblivion are ye still doing here!?
+<ce>            Yer guildmate's gonna die if ye stand there
+<ce>            with yer thumb up yer arse! GO!
+
+QuestComplete:  [1004]
+<ce>            Here's yer pay. Nice job.
+
+RumorsDuringQuest:   [1005]
+My neighbor had a trap installed on his storage chest. That’s a good way to stop those damn thieves.
+
+RumorsPostFailure:   [1006]
+I heard a body has been found in __res_. There was a small, thin bolt in the sod’s neck. Guards seem to think the corpse has been abandoned on purpose.
+
+RumorsPostSuccess:   [1007]
+My neighbor had a trap installed on his storage chest. That’s a good way to stop those damn thieves.
+
+QuestorPostsuccess:  [1008]
+We won’t be forgetting yer help for our wounded guildmate. What do ye need?
+
+QuestorPostfailure:  [1009]
+Our guildmate’s dead, you know that? If you couldn’t help, then you should have said so! %oth.
+
+Message: 1010
+<ce>            _dummy_'s skin is pale. A deep wound is
+<ce>            slashed against %g3 chest. The thief speaks slowly,
+<ce>            barely audible.
+<ce>
+<ce>            "How bad does it... look, %lev?. I was in
+<ce>            that... wizard’s residence and felt a... sting as I
+<ce>            opened a chest. Heal me and make it quick, please."
+<--->
+<ce>            _dummy_'s skin is pale. The wound appears
+<ce>            magical in nature. The thief speaks slowly, barely
+<ce>            audible
+<ce>
+<ce>            "Damn trap. Ugh… heal me, %lev. Please…"
+
+Message: 1020
+<ce>            As you lay your hands on _dummy_'s
+<ce>            wound, pronuncing your spell's incantation,
+<ce>            you see it slowly close shut as the blood
+<ce>            vanishes. Color returns then almost instantly
+<ce>            to %g3 skin
+<ce>
+<ce>            "I still feel weak, but I guess a good rest
+<ce>            will take care of it. Thanks, %pcn."
+
+Message: 1030
+<ce>            The Thieves Guild requires my services, again? 
+<ce>            *Sigh*. Show me the way, %ra. 
+<--->
+<ce>            Then let's be quick, %ra. _dummy_ may not
+<ce>            have long to live. Lead the way.
+
+Message: 1040
+<ce>            _healer_ runs to _dummy_ and
+<ce>            touches the wounds while muttering a prayer to
+<ce>            Stendarr. The opened wound slowly closes and
+<ce>            the blood vanishes.
+<ce>
+<ce>            "You are healed, _dummy_. Take some
+<ce>            rest. You, %ra. Tell your guildmaster to
+<ce>            invest in training your fellow guildmates. Other 
+<ce>            incidents like this and I may have to become a
+<ce>            full-time member. I'll come by tomorrow to
+<ce>            collect my fee."
+<ce>
+<ce>            _healer_ waves farewell and leaves.
+
+Message: 1050
+<ce>            So _dummy_ will make it? Good thing you knew a spell.
+<ce>            The fool will have to pay us back for that. We ain't a clinic. 
+<ce>            Nice work, %pcn.
+
+Message: 1055
+<ce>            So _dummy_ will make it? Good. Fellow’ll
+<ce>            have to pay us for that service. We’re not a
+<ce>            damn temple. Good thing we have _healer_
+<ce>            to help us. Anyway, thanks for the quick help,
+<ce>            %lev.
+
+Message: 1060
+%qdt:
+_questgiver_ instructed me to heal our
+fellow guildmate, _dummy_
+in _guild_, who has been
+badly wounded during a burglary. 
+Alternatively, I must bring _healer_,
+who lives in _res_,
+to _dummy_. _questgiver_
+believes our guildmate won't probably
+survive another hour, so time is of the
+essence.
+
+Message: 1070
+<ce>            _dummy_'s dead? Took your sweet time,
+<ce>            did you? When I tell you to run like Molag
+<ce>            Bal's after yer arse, I mean it!
+<ce>
+<ce>            Someone get to _res_
+<ce>            and dispose of the mess.
+
+Message: 1080
+<ce>            _healer_ runs to _dummy_, but
+<ce>            stops suddenly. Checking the body for
+<ce>            a pulse, the healer turns to you.
+<ce>
+<ce>            "_dummy_'s dead, %pcn. See this
+<ce>            bolt? It's poisoned. I'm afraid we did not
+<ce>            arrive in time. There's nothing more I can do.
+<ce>            Tell your guildmaster to invest in training
+<ce>            your fellow guildmates so accidents like this
+<ce>            do not happen again. Arkay guide %g3 spirit.
+<ce>            Farewell."
+<ce>
+<ce>            _healer_ waves farewell and leaves.
+
+Message: 1090
+<ce>            The body is pale white and shows no pulse.
+<ce>            _dummy_'s face expresses what
+<ce>            could only have been a painful death.
+
+QBN:
+Item _reward_ gold
+Item _corpse_ dead_body
+
+Person _questgiver_ group Questor male
+Person _dummy_ face 229 faction The_Thieves_Guild
+Person _healer_ group Cleric
+
+Place _res_ local house
+Place _guild_ local house
+
+Foe _wounded1_ is Thief
+Foe _wounded2_ is Rogue
+Foe _wounded3_ is Bard
+Foe _wounded4_ is Burglar
+Foe _wounded5_ is Acrobat
+
+Clock _timer_ 01:00
+
+--	Quest start-up:
+	start timer _timer_
+	log 1060 step 0
+    pc at _guild_ set _inside_
+    place npc _healer_ at _res_
+    pick one of _thief_ _rogue_ _bard_ _burglar_ _acrobat_
+	have _corpse_ set _removecorpse_
+
+
+_inside_ task:
+
+_thief_ task:
+    place foe _wounded1_ at _guild_
+    restrain foe _wounded1_
+
+_rogue_ task:
+    place foe _wounded2_ at _guild_
+    restrain foe _wounded2_
+
+_bard_ task:
+    place foe _wounded3_ at _guild_
+    restrain foe _wounded3_
+
+_burglar_ task:
+    place foe _wounded4_ at _guild_
+    restrain foe _wounded4_
+
+_acrobat_ task:
+    place foe _wounded5_ at _guild_
+    restrain foe _wounded5_
+
+_foeclicked1_ task:
+    clicked foe _wounded1_
+    start task _woundedtalk1_
+
+_foeclicked2_ task:
+    clicked foe _wounded2_
+    start task _woundedtalk2_
+
+_foeclicked3_ task:
+    clicked foe _wounded3_
+    start task _woundedtalk3_
+
+ _foeclicked4_ task:
+    clicked foe _wounded4_
+    start task _woundedtalk4_
+
+ _foeclicked5_ task:
+    clicked foe _wounded5_
+    start task _woundedtalk5_
+
+_woundedtalk1_ task:
+    when _foeclicked1_ and not _healerhealed_ and not _pchealed_
+    say 1010
+
+ _woundedtalk2_ task:
+    when _foeclicked2_ and not _healerhealed_ and not _pchealed_
+    say 1010
+
+_woundedtalk3_ task:
+    when _foeclicked3_ and not _healerhealed_ and not _pchealed_
+    say 1010
+
+ _woundedtalk4_ task:
+    when _foeclicked4_ and not _healerhealed_ and not _pchealed_
+    say 1010
+
+_woundedtalk5_ task:
+    when _foeclicked5_ and not _healerhealed_ and not _pchealed_
+    say 1010
+
+_cast_ task:
+    when _inside_ and not _healerhealed_
+ 	cast Heal spell do _pchealed_
+   
+_pchealed_ task:
+    say 1020
+    hide npc _healer_
+    stop timer _timer_
+
+_attack1_ task:
+    injured _wounded1_
+    kill foe _wounded1_
+    stop timer _timer_
+    start task _slain_
+
+_attack2_ task:
+    injured _wounded2_
+    kill foe _wounded2_
+    stop timer _timer_
+    start task _slain_
+
+ _attack3_ task:
+    injured _wounded3_
+    kill foe _wounded3_
+    stop timer _timer_
+    start task _slain_
+
+_attack4_ task:
+    injured _wounded4_
+    kill foe _wounded4_
+    stop timer _timer_
+    start task _slain_
+
+_attack5_ task:
+    injured _wounded5_
+    kill foe _wounded5_
+    stop timer _timer_
+    start task _slain_
+
+_slain_ task:
+    hide npc _healer_
+
+-- Healer's tasks
+
+_accompany_ task:
+    clicked npc _healer_ 
+    say 1030
+    hide npc _healer_
+    add _healer_ face
+
+_healerheal_ task:
+    when _inside_ and _accompany_ and not _timer_
+    say 1040
+    drop _healer_ face
+    start task _healerhealed_
+    stop timer _timer_
+
+_healerhealed_ task:
+
+_healerleave_ task:
+    when _inside_ and _accompany_ and _timer_
+    say 1080
+    drop _healer_ face
+
+-- Quest success/fail mechanics
+
+_resolution_ task:
+    when _pchealed_ or _slain_ or _healerhealed_
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_clearqgclicked_ task:
+    when _qgclicked_ and not _resolution_
+    clear _qgclicked_ _clearqgclicked_
+
+_win1_ task:
+    when _qgclicked_ and _pchealed_ and not _slain_
+    say 1050
+    change repute with _questgiver_ by +2
+    give pc _reward_
+    end quest    
+
+_win2_ task:
+    when _qgclicked_ and _healerhealed_ and not _slain_
+    say 1055
+    give pc _reward_
+    end quest
+
+_fail_ task:
+    when _qgclicked_ and _timer_
+    say 1070
+    end quest
+
+_fail2_ task:
+    when _qgclicked_ and _slain_
+    say 1070
+    end quest
+ 
+_timer_ task:
+    place item _corpse_ at _guild_
+    remove foe _wounded1_
+    remove foe _wounded2_
+    remove foe _wounded3_
+    remove foe _wounded4_
+    remove foe _wounded5_
+
+_corpse_ task:
+    clicked item _corpse_
+    say 1090
+
+_removecorpse_ task:
+	take _corpse_ from pc
+

@@ -1,0 +1,189 @@
+Quest: JOTG04
+DisplayName: Stolen Casket
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            %lev, one of ours has brought back a
+<ce>            chest stolen from some wizard. Thing is, even
+<ce>            our best locksmith can’t unlock it and we need
+<ce>            it opened today. You wouldn’t happen to know
+<ce>            the Open spell, wouldn’t you?
+<--->
+<ce>            I don’t have a major job for ye, %lev.
+<ce>            Just a simple task if yer free today and know
+<ce>            yer way around magic to cast the Open spell.
+<ce>            We have some hot property here that’s been 
+<ce>            magically locked. Can ye lend us a hand for a
+<ce>            minute?
+<--->
+<ce>            Last week we got a contract to steal a mage’s
+<ce>            box. One of our boys snatched it while the
+<ce>            wizard was busy reading.  Anyway, we can’t
+<ce>            unlock it. Seems like it’s been locked with a
+<ce>            spell. Our friend in the Mages Guild isn’t
+<ce>            available, our contact wants its contents
+<ce>            today and nobody here knows the Open spell. 
+<ce>            Do you know such magic?
+
+RefuseQuest:  [1001]
+<ce>            Damn it! Run along now.
+<--->
+<ce>            I took you for the spellcasting type. I was
+<ce>            wrong. See ya later.
+<--->
+<ce>            %oth. I’m supposed to meet a
+<ce>            spellsword later anyway. I guess I’ll pay
+<ce>            him to open it. See ya.
+
+AcceptQuest:  [1002]
+<ce>            Alright. Here’s the chest. Like I said, I
+<ce>            need it unlocked today. 
+<--->
+<ce>            Hey boys, fetch me that wizard’s chest.
+<ce>            Our %ra %lev here will open it.
+<ce>            Get that opened today, will you? 
+<--->
+<ce>            Good, here it is. Now make it quick. Our
+<ce>            contact is coming later today and will
+<ce>            want it unlocked on arrival.
+
+QuestFail:  [1003]
+<ce>            So, have you managed to open that casket yet?
+
+QuestComplete:  [1004]
+<ce>            What a waste of time and efforts. Damn
+<ce>            wizards. We paid a mighty good price
+<ce>            for a tip on that crap. Anyway, I
+<ce>            appreciate yer help. Here, take the
+<ce>            standard guild fee.
+
+RumorsDuringQuest:   [1005]
+There was a bolt of lightning in the sky yesterday. I guess the town’s wizard’s angry about something.
+
+RumorsPostFailure:   [1006]
+A mage here in town keeps asking for a lost casket of his. He seemed furious.
+
+RumorsPostSuccess:   [1007]
+Don’t tell anyone I told you this, but apparently the Thieves Guild is behind a theft at some mage’s house.
+
+QuestorPostsuccess:  [1008]
+Hey, %lev. Our favorite thief who knows magic! Remember that useless box ya opened for us?
+
+QuestorPostfailure:  [1009]
+For shadows’ sake, the hell ya want? I’m still angry at ye for failing to open that stupid wizard’s box.
+
+
+Message: 1010
+%qdt:
+_questgiver_ of the ___questgiver_
+Thieves Guild has asked me to open some casket stolen
+from a wizard with standard Open spell. The Guild
+needs it opened today before our contact arrives to
+take its contents.
+
+Message:  1020
+<ce>                  As you cast Open on the chest, the
+<ce>                 lid springs open and an imp flies out.
+<ce>                                    
+<ce>                "Happy birthday, %nam you old fart!"
+<ce>                   the imp cackles in an unnaturally
+<ce>                          deep gravelly voice.
+
+Message:  1030
+<ce>                  You hear the lock click as you cast
+<ce>                  Open on the chest.  Inside is a wand
+<ce>                  inscribed: "To %nam on your 110th
+<ce>                   birthday.  Use me for a preview of
+<ce>                         your 120th birthday!"
+
+Message:  1040
+<ce>                Smoke pours from the chest as you cast
+<ce>               Open on it.  The lid pops open, revealing
+<ce>                           an engraved card:
+<ce>                                    
+ Dear %nam,
+ 
+ Hope you like the new place.  Did
+ you remember to call the exterminator
+ before you moved in?
+ 
+ Your friend,
+ 
+ %fn2
+
+Message:  1050
+<ce>                    The lid of the chest pops open.
+<ce>                      Inside is nothing but a few
+<ce>                       scraps of faded confetti.
+
+
+
+QBN:
+Item _reward_ gold
+Item _casket_ item class 1 subclass 8
+Item _wand_ wand
+
+Person _questgiver_ group Questor male
+
+Foe _imp_ is Imp
+Foe _rat_ is Giant_rat
+Foe _skeleton_ is Skeletal_warrior
+
+Clock _timer_ 24:00
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+	get item _casket_ 
+    cast Open spell do _surprise_ 
+
+_surprise_ task:
+	pick one of _surprise1_ _surprise2_ _surprise3_ _surprise4_
+
+_surprise1_ task:
+	create foe _imp_ every 0 minutes 1 times with 100% success 
+	say 1020
+
+_surprise2_ task:
+	_wand_ used do _wand2_ 
+	get item _wand_ 
+	say 1030
+
+_surprise3_ task:
+	create foe _rat_ every 0 minutes 3 times with 100% success 
+	say 1040 
+
+_surprise4_ task:
+	say 1050
+
+_wand2_ task:
+	create foe _skeleton_ every 0 minutes 1 times with 100% success 
+	make _wand_ permanent 
+
+_slainimp_ task:
+    killed _imp_
+
+_slainskeleton_ task:
+    killed _skeleton_
+
+_slainpests_ task:
+    killed 3 _rat_
+
+_win_ task:
+    when _slainimp_ or _slainpests_ or _slainskeleton_ or _surprise4_
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_clearqgclicked_ task:
+	when _qgclicked_ and not _win_
+	clear _qgclicked_ _clearqgclicked_
+
+_done_ task:
+    when _qgclicked_ and _win_
+    give pc _reward_
+    end quest
+
+_timer_ task:
+    end quest

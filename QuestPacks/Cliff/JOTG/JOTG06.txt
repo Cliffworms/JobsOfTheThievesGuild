@@ -1,0 +1,213 @@
+Quest: JOTG06
+DisplayName: Mages Guild Burglary
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            I got a job for you. Something that might
+<ce>            add some clink to your pockets. I’ve heard
+<ce>            that one of the Mages Guild will be empty
+<ce>            for several nights. Interested?
+<--->
+<ce>            We got a tip, %lev. One of %crn's
+<ce>            Mages Guild will be unguarded for many nights. 
+<ce>            The wizards are apparently meeting outside for
+<ce>            an experiment, ritual or whatever it is they
+<ce>            do. Anyway, that means the place is unguarded
+<ce>            and ripe for the picking. What do you say?
+
+RefuseQuest:  [1001]
+<ce>            %oth. If you ain’t gonna do a simple
+<ce>            and quick job like this, how do you expect to 
+<ce>            rise in the ranks, %pcn?
+
+AcceptQuest:  [1002]
+<ce>            Good %ra. So like I said, get to the Mages
+<ce>            Guild in __guild_ and try to find
+<ce>            something magical that could be of interest. I’m
+<ce>            sure you’ll find something. I hear the mages are
+<ce>            away from midnight to late in the morning, so
+<ce>            that'd be the the best time to break in the place.
+<ce>            Those rituals of theirs are supposed to end in
+<ce>            around =timer_ days, so keep that in mind. 
+
+QuestFail:  [1003]
+
+QuestComplete:  [1004]
+<ce>            Say, that looks valuable. Good show, %lev.
+<ce>            I’ll have that identified and sold to the highest bidder.
+<ce>            Oh, yeah. Sorry if you ran into trouble. Seems like the
+<ce>            Mages Guild always knows when we’re planning something.
+<ce>            Here’s your gold.
+
+RumorsDuringQuest:   [1005]
+There were strange lights outside last night. Probably the Mages Guild practicing their spells.
+
+RumorsPostFailure:   [1006]
+I hear there’s been a failed burglary at one of the Mages Guild halls. Their guardian bravely repulsed the thief.
+
+RumorsPostSuccess:   [1007]
+Burglars are getting reckless by the day. Everyone's talking about the break-in at the Mages Guild.
+
+QuestorPostsuccess:  [1008]
+The Mages Guild burglar in person. We made good profit from your job. What do you need?
+
+QuestorPostfailure:  [1009]
+We missed a damn good opportunity to rob the Mages Guild because of your incompetence. Don’t think I’ll forget that anytime soon. 
+
+Message: 1010
+%qdt
+_questgiver_ of ___questgiver_'s Thieves
+Guild is sending me to the __guild_ Mages Guild.
+Apparently, the place is empty from midnight to late in
+the morning for the next =timer_ days, so any magical
+trinket is free for the taking while the mages are out.
+This is the only opportunity we have to break inside their
+hall.
+
+Message: 1020
+<ce>                You suddenly shiver as a cold wind
+<ce>                from down the hall strokes your hair...
+
+Message: 1022
+<ce>                The air suddenly grows much warmer,
+<ce>                as if a fire had started down the hall...
+
+Message: 1024
+<ce>                You are suddenly startled as you hear
+<ce>                heavy, metallic footsteps from down
+<ce>                the hall breaking the Mages Guild silence...
+
+Message: 1026
+<ce>                You are suddenly startled as you hear light
+<ce>                footsteps, almost sounding like bare feet,
+<ce>                from down the hall, breaking the Mages
+<ce>                Guild silence...
+
+Message: 1030
+<ce>                A wizard turns the corner and notices you
+<ce>                with the magical item in your hands.
+<ce>
+<ce>                "Colleagues! A thief is escaping with our
+<ce>                _trinket_! Call the guards!"
+
+Message: 1040
+<ce>                An atronach guarding the magical item, you
+<ce>                say? Seems like the Mages Guild always knows 
+<ce>                when we’re planning something. Killing one
+<ce>                of those things is rarely heard in the guild, 
+<ce>                so how about I double your reward? Can’t say
+<ce>                no to that, can you? Nice work.
+
+Message: 1041
+<ce>                This _trinket_ beams with magical energy.
+
+
+QBN:
+Item _reward_ gold
+Item _bonus_ gold
+Item _trinket_ magic_item
+
+Person _questgiver_ group Questor male
+Person _mage_ faction The_Mages_Guild
+
+Place _guild_ remote magery
+
+Foe _atronach1_ is Ice_atronach
+Foe _atronach2_ is Fire_atronach
+Foe _atronach3_ is Iron_atronach
+Foe _atronach4_ is Flesh_atronach
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _guard_ 00:15
+
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    pc at _guild_ set _inside_
+    place item _trinket_ at _guild_
+    have _trinket_ set _gotitem_
+
+_inside_ task:
+
+_guildopen_ task:
+    daily from 11:00 to 23:00
+
+_spawnfoe_ task:
+    when _inside_ and not _guildopen_
+    clear _stopguard_
+    start timer _guard_
+
+_guard_ task:
+    pick one of _foe1_ _foe2_ _foe3_ _foe4_ _foe5_
+
+_foe1_ task:
+    place foe _atronach1_ at _guild_
+    say 1020
+     
+_foe2_ task:
+    place foe _atronach2_ at _guild_
+    say 1022
+
+_foe3_ task:
+    place foe _atronach3_ at _guild_
+    say 1024
+
+ _foe4_ task:
+    place foe _atronach4_ at _guild_
+    say 1026
+
+_foe5_ task:
+--Chance of no mobs
+
+_pickupday_ task:
+    when _inside_ and _guildopen_
+    have _trinket_ set _mageattack_
+
+_mageattack_ task:
+    spawncityguards immediate
+    change repute with _mage_ by -15
+    setplayercrime Theft
+    say 1030
+
+_gotitem_ task:
+    say 1041
+
+_giveitem_ task:
+    toting _trinket_ and _questgiver_ clicked
+
+_success_ task:
+    when _giveitem_ and not _slain_
+    give pc _reward_
+    end quest
+
+_successbonus_ task:
+    when _giveitem_ and _slain_
+    give pc _reward_
+    get item _bonus_
+    say 1040
+    end quest
+
+_slain1_ task:
+    killed _atronach1_
+
+_slain2_ task:    
+    killed _atronach2_
+
+_slain3_ task:
+    killed _atronach3_
+
+_slain4_ task:
+    killed _atronach4_
+
+_slain_ task:
+    when _slain1_ or _slain2_ or _slain3_ or _slain4_
+
+_timer_ task:
+    end quest
+
+_stopguard_ task:
+    when not _inside_
+    stop timer _guard_
+    clear _spawnfoe_
